@@ -5,7 +5,7 @@
 		"__type" : "snippets",
 		"items" : [
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-29T17:50:02.966412-03:00"
+						"dateAndTimeString" : "2023-03-11T21:03:19.828592-03:00"
 					}
 				},
 				"editEmail" : {
@@ -29,14 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-29T17:50:04.337485-03:00"
+						"dateAndTimeString" : "2023-03-11T21:04:09.847017-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Qwdu23G0DQC/V8jnCfBfww=="
+					"uidString" : "/F+DdQqzDQC7/3qsAvH0zQ=="
 				},
-				"code" : "settingsFile := 'sga-settings.json' asFileReference."
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "## Using the Tealight package to control a unique teapot instance"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -52,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-29T17:50:08.499711-03:00"
+						"dateAndTimeString" : "2023-03-29T09:28:12.083082-03:00"
 					}
 				},
 				"editEmail" : {
@@ -63,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-29T17:50:21.074433-03:00"
+						"dateAndTimeString" : "2023-03-29T09:28:17.93217-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "O3jC23G0DQC/YAK0CfBfww=="
+					"uidString" : "sGiu2Gq0DQCUHxMPAPbSrQ=="
 				},
-				"code" : "desenvDict := {#url -> 'https://www-d.fgv.br/EBAPE/GestaoAcad'.\r\t\t\t   #prefix -> 'api'.\r\t\t\t   #version -> 'v1'} asDictionary.\r\t\t\t   \rmockDict := {#url -> 'http://localhost:8282'.\r\t\t\t #prefix -> ''.\r\t\t     #version -> ''} asDictionary.\r\t\t     \rsgaSettings := {#current -> 'mock'.\r\t\t\t\t#mock -> mockDict.\r\t\t\t\t#desenv -> desenvDict} asDictionary."
+				"code" : "teapot1 := MockAPIServer teapot"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -86,7 +89,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-29T17:50:24.076782-03:00"
+						"dateAndTimeString" : "2023-03-29T09:16:28.653433-03:00"
 					}
 				},
 				"editEmail" : {
@@ -97,14 +100,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-29T17:50:33.718928-03:00"
+						"dateAndTimeString" : "2023-03-29T17:27:57.738998-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "7Ciw3HG0DQC/aZ4WCfBfww=="
+					"uidString" : "5erArmq0DQCT0zQiAPbSrQ=="
 				},
-				"code" : "content := settingsFile readStreamDo: [ :stream | stream contents ].\r\r\nsgaSettings := NeoJSONReader fromString: content.\r\rsgaSettings at: 'current' put: 'desenv';\r\t\t\tyourself."
+				"code" : "MockAPIServer rebuildRoutes."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -120,7 +123,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-29T17:50:36.417053-03:00"
+						"dateAndTimeString" : "2023-03-29T08:56:54.232081-03:00"
 					}
 				},
 				"editEmail" : {
@@ -131,14 +134,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-29T17:50:43.584558-03:00"
+						"dateAndTimeString" : "2023-03-29T08:57:11.680714-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "ZHVs3XG0DQC/cg5cCfBfww=="
+					"uidString" : "cbDAaGq0DQCIQsMGD9HSGg=="
 				},
-				"code" : "content := NeoJSONWriter toStringPretty: sgaSettings.\rstream := settingsFile writeStream.\rstream nextPutAll: content.\rstream close."
+				"code" : "MockAPIServer start."
 			}
 		]
 	},
@@ -150,7 +153,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-03-29T17:49:52.047393-03:00"
+			"dateAndTimeString" : "2023-03-09T10:02:38.216-03:00"
 		}
 	},
 	"editEmail" : {
@@ -161,15 +164,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-06-01T15:59:37.442-03:00"
+			"dateAndTimeString" : "2023-03-29T17:53:07.98335-03:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "desenv - sga-settings.json File"
+		"title" : "SGA Mock API Server"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "1273c7da-71b4-0d00-bf54-821309f05fc3"
+		"uuid" : "40a301ff-d8b2-0d00-9330-bab308d699a3"
 	}
 }

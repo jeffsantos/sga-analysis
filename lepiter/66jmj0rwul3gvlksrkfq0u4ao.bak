@@ -5,7 +5,7 @@
 		"__type" : "snippets",
 		"items" : [
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T22:40:20.406-03:00"
+						"dateAndTimeString" : "2023-02-01T19:05:35.96081-03:00"
 					}
 				},
 				"editEmail" : {
@@ -29,14 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T23:15:37.101-03:00"
+						"dateAndTimeString" : "2023-02-01T19:05:43.341005-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "CLeXQWm5DQCs6iCfBxNxKQ=="
+					"uidString" : "BIJPYgywDQC7yRfEBlHzaQ=="
 				},
-				"code" : "model := MooseModel root allModels detect: [ :each | each name = 'argouml' ]"
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "## Object model of the API"
 			},
 			{
 				"__type" : "textSnippet",
@@ -52,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T22:59:20.592-03:00"
+						"dateAndTimeString" : "2023-02-25T21:30:32.753-03:00"
 					}
 				},
 				"editEmail" : {
@@ -63,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T22:59:55.724-03:00"
+						"dateAndTimeString" : "2023-02-25T21:31:18.961-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "gJaNhWm5DQCyJIhBBxNxKQ=="
+					"uidString" : "yO3/NPGxDQCUZgtCDiaO5g=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "All queries below are in a FAMIXClass object:"
+				"string" : "### Programs"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -89,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T23:12:31.803-03:00"
+						"dateAndTimeString" : "2023-02-08T08:47:58.454-03:00"
 					}
 				},
 				"editEmail" : {
@@ -100,14 +103,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T23:12:51.261-03:00"
+						"dateAndTimeString" : "2023-03-08T12:27:03.91-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "kH62tGm5DQC2hMzpBxNxKQ=="
+					"uidString" : "CAGYkpCwDQCfs8N+CgYwzA=="
 				},
-				"code" : "classes := model allModelClasses."
+				"code" : "progRepo := ProgramRESTRepository createRESTRepository.\r\rprogRepo token.\r\rprogRepo programs.\r\raProgram := progRepo programId: 1.\r\raProgram cohorts"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-08T12:24:32.692-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-08T12:24:33.903-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "sAaL3MayDQCcTBR+BvFsIA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "## Disciplines"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -123,7 +163,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T23:12:55.816-03:00"
+						"dateAndTimeString" : "2023-03-08T12:24:37.405-03:00"
 					}
 				},
 				"editEmail" : {
@@ -134,14 +174,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T23:13:21.468-03:00"
+						"dateAndTimeString" : "2023-04-24T16:22:00.982782-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "WOcktmm5DQC2jQaaBxNxKQ=="
+					"uidString" : "eL3y3MayDQCcXMllBvFsIA=="
 				},
-				"code" : "aClass := (classes at: 1)"
+				"code" : "discRepo := DisciplineRESTRepository createRESTRepository.\r\rdiscRepo token.\r\rdisciplines := discRepo disciplines.\r\r(disciplines at:1) workload.\r\rdiscRepo disciplineId: 45."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -157,7 +197,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T22:37:25.318-03:00"
+						"dateAndTimeString" : "2023-04-24T10:15:20.329601-03:00"
 					}
 				},
 				"editEmail" : {
@@ -168,14 +208,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T23:14:15.25-03:00"
+						"dateAndTimeString" : "2023-05-08T14:51:34.174-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "iBUoN2m5DQCsNBJbBxNxKQ=="
+					"uidString" : "E8UhiXa2DQCiKFn1BNJQQg=="
 				},
-				"code" : "aClass query: #in with: FAMIXInheritance"
+				"code" : "discObj := Discipline new\r\t\t\t\t\tcode: 'GRAD003';\r\t\t\t\t\tname: 'Teste via lepiter';\r\t\t\t\t\tworkload: 45."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -191,7 +231,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T22:37:51.54-03:00"
+						"dateAndTimeString" : "2023-04-24T11:39:18.140396-03:00"
 					}
 				},
 				"editEmail" : {
@@ -202,14 +242,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T23:14:17.281-03:00"
+						"dateAndTimeString" : "2023-04-24T11:39:42.7628-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "aCu4OGm5DQCsUWoYBxNxKQ=="
+					"uidString" : "iq9otXe2DQClOSfkBNJQQg=="
 				},
-				"code" : "(aClass query: #in with: FAMIXInheritance) opposites"
+				"code" : "dict := discObj rawData"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -225,7 +265,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T22:37:55.178-03:00"
+						"dateAndTimeString" : "2023-04-24T10:20:55.364585-03:00"
 					}
 				},
 				"editEmail" : {
@@ -236,14 +276,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T23:14:19.602-03:00"
+						"dateAndTimeString" : "2023-04-24T11:39:48.439153-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "KLbvOGm5DQCsWht+BxNxKQ=="
+					"uidString" : "DwYanXa2DQCkjkwOBNJQQg=="
 				},
-				"code" : "aClass atScope: FAMIXType"
+				"code" : "discRepo add:dict"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-02-25T21:31:37.743-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-02-25T21:31:44.4-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "mGLBOPGxDQCU6e8FDiaO5g=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "### Professors"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -259,7 +336,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T22:37:57.459-03:00"
+						"dateAndTimeString" : "2023-02-25T21:31:53.525-03:00"
 					}
 				},
 				"editEmail" : {
@@ -270,14 +347,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T23:14:21.17-03:00"
+						"dateAndTimeString" : "2023-05-09T12:41:06.018877-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "UIQSOWm5DQCsXs4zBxNxKQ=="
+					"uidString" : "CBPhOfGxDQCVF27ADiaO5g=="
 				},
-				"code" : "aClass toScope: FAMIXType"
+				"code" : "professorRepo := ProfessorRESTRepository createRESTRepository.\r\rprofessorRepo token.\r\rprofessorRepo professors.\r\rprofessorRepo professorId: 11"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-02-25T21:31:25.924-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-02-25T21:31:30.189-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8DEnOPGxDQCUxF7cDiaO5g=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "### Classes"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -293,7 +407,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T22:38:09.171-03:00"
+						"dateAndTimeString" : "2023-02-24T23:46:28.963-03:00"
 					}
 				},
 				"editEmail" : {
@@ -304,184 +418,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T23:14:22.744-03:00"
+						"dateAndTimeString" : "2023-05-09T12:42:07.218023-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "UDrFOWm5DQCsdr74BxNxKQ=="
+					"uidString" : "AA9f/d6xDQCUsfz4Bu1IwA=="
 				},
-				"code" : "aClass atScope: FAMIXNamespace"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T22:38:11.385-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T23:14:24.082-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "wALnOWm5DQCsegb+BxNxKQ=="
-				},
-				"code" : "aClass allAtScope: FAMIXNamespace"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T22:38:13.53-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T23:14:26.239-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "qL0HOmm5DQCsflxUBxNxKQ=="
-				},
-				"code" : "aClass queryAllIncoming"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T22:38:15.714-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T23:14:28.183-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "AA0pOmm5DQCsggtxBxNxKQ=="
-				},
-				"code" : "aClass queryAllIncoming atScope: FAMIXType"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T22:38:17.997-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T23:14:30.079-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "+OJLOmm5DQCshtchBxNxKQ=="
-				},
-				"code" : "(aClass queryAllIncoming opposites atScope: FAMIXType) withoutSelfLoops"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T22:38:20.055-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-31T23:14:31.65-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "8E1rOmm5DQCsitj8BxNxKQ=="
-				},
-				"code" : "((aClass queryAllIncoming atScope: FAMIXType) \r\t\t\t\t\t\t\t\t\twithoutSelfLoops) atScope: FAMIXType"
+				"code" : "classOfferRepo := ClassOfferRESTRepository createRESTRepository.\r\rclassOfferRepo token.\r\rclassOfferRepo classOffers.\r\rclassOfferRepo classOfferId: 'f0cb599c-80f8-42ff-af20-e95b7ca5d1f5'"
 			}
 		]
 	},
@@ -493,7 +437,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-31T22:37:20.126-03:00"
+			"dateAndTimeString" : "2023-01-26T19:31:39.336-03:00"
 		}
 	},
 	"editEmail" : {
@@ -504,15 +448,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-31T23:21:44.236-03:00"
+			"dateAndTimeString" : "2023-03-16T12:45:25.436458-03:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "software-assessment - Some Moose queries"
+		"title" : "Loading the domain model from the SGA API"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "48dcd836-69b9-0d00-ac31-75b307137129"
+		"uuid" : "4009a40c-94af-0d00-a6ff-33d5010f6b68"
 	}
 }

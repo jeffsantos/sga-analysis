@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-20T21:21:46.05-03:00"
+						"dateAndTimeString" : "2023-04-24T08:19:21.371333-03:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-04-22T22:02:56.50364-03:00"
+						"dateAndTimeString" : "2023-04-24T08:20:10.526544-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "0F0FxL+zDQCxd7xUAomVSg=="
+					"uidString" : "BotY6nS2DQCSNJYzD5ne3Q=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtTodo:label=Rever métodos de busca por id (navegar nos arrays para encontrar o id correto)|completed=2023-04-22}}"
+				"string" : "##POST in 'Disciplinas' endpoint"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-20T21:23:25.357-03:00"
+						"dateAndTimeString" : "2023-04-24T16:09:42.713703-03:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,119 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-20T21:23:59.481-03:00"
+						"dateAndTimeString" : "2023-04-24T16:10:22.891515-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "+KPwyb+zDQCzzLKGAomVSg=="
+					"uidString" : "7QJ4fHu2DQC9EWu1AddQ5A=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtTodo:label=Ampliar testes com exemplos mais significativos}}"
+				"string" : "The ZnClient expect the fields values in the POST form to be Strings"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-04-22T22:44:06.37862-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-04-24T15:32:39.705761-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "vR5Aw1i2DQC2MBwjDPVBwA=="
+				},
+				"code" : "disc := { 'codigo' -> '99'.\r\t\t  'id'-> 11 asString.\r\t\t  'nome' -> 'Teste'.\r\t\t  'cargaHoraria' -> 30 asString} asDictionary"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-04-22T23:15:37.562767-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-04-22T23:20:09.61203-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "11P5M1m2DQCTh0VECz076Q=="
+				},
+				"code" : "entityStr := NeoJSONWriter toStringPretty:disc."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-04-22T23:22:02.939238-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-04-22T23:23:13.495803-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "QLLxSlm2DQCVkp41Cz076Q=="
+				},
+				"code" : "urlBase := 'http://localhost:8282/'.\rserviceEndPoint := 'Disciplinas'."
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +194,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-20T21:24:03.055-03:00"
+						"dateAndTimeString" : "2023-04-24T08:20:27.766469-03:00"
 					}
 				},
 				"editEmail" : {
@@ -103,17 +205,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-30T07:50:45.092398-03:00"
+						"dateAndTimeString" : "2023-04-24T08:20:35.112456-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "sOEvzL+zDQC1Lps6AomVSg=="
+					"uidString" : "AqFN7nS2DQCTaPRMD5ne3Q=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtTodo:label=Encapsular a criação do servidor usando os dados mock em uma classe|completed=2023-03-30}}"
+				"string" : "### Via ZnEntity"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-04-22T23:15:02.302557-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-04-24T09:07:30.843312-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "rU7fMVm2DQCTfpRcCz076Q=="
+				},
+				"code" : "ZnClient new\n   url: urlBase , serviceEndPoint;\r   headerAt: 'Authorization' put: 'Bearer 4302917e-c0bd-4f02-a15b-b7cf42ad6f5c';\n   entity: (ZnEntity\n               with: entityStr\n               type: ZnMimeType applicationJson);\n   post"
 			},
 			{
 				"__type" : "textSnippet",
@@ -129,7 +265,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-20T21:24:48.396-03:00"
+						"dateAndTimeString" : "2023-04-24T08:20:39.067626-03:00"
 					}
 				},
 				"editEmail" : {
@@ -140,17 +276,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-20T21:25:40.816-03:00"
+						"dateAndTimeString" : "2023-04-24T08:20:45.547718-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "+Lrjzr+zDQC22rqcAomVSg=="
+					"uidString" : "4gr67nS2DQCTvB43D5ne3Q=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtTodo:label=Refatorar o método de criação dos dados mocks, pois está muito longo}}"
+				"string" : "### Via Form"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-04-22T23:36:37.547344-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-04-24T12:11:05.680625-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "WygTf1m2DQCbDoUpCz076Q=="
+				},
+				"code" : "ZnClient new\n   url: urlBase , serviceEndPoint;\r   headerAt: 'Authorization' put: 'Bearer 4302917e-c0bd-4f02-a15b-b7cf42ad6f5c';\n   formAddAll: disc;\r   post"
 			},
 			{
 				"__type" : "textSnippet",
@@ -166,7 +336,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-20T21:25:50.132-03:00"
+						"dateAndTimeString" : "2023-04-24T08:18:24.750727-03:00"
 					}
 				},
 				"editEmail" : {
@@ -177,20 +347,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-04-24T16:10:56.277788-03:00"
+						"dateAndTimeString" : "2023-04-24T08:20:17.556326-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "kGIo0r+zDQC4w8CwAomVSg=="
+					"uidString" : "45D45nS2DQCRqqLFD5ne3Q=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtTodo:label=Criar alguns métodos mock de atualização|completed=2023-04-24}}"
+				"string" : "## GET in 'Disciplinas' endpoint"
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -203,7 +373,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-30T11:11:52.681806-03:00"
+						"dateAndTimeString" : "2023-04-22T23:38:02.682845-03:00"
 					}
 				},
 				"editEmail" : {
@@ -214,91 +384,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-30T11:12:16.194502-03:00"
+						"dateAndTimeString" : "2023-04-24T08:17:52.643662-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "1JtMaYC0DQCxWy+hDqkEag=="
+					"uidString" : "XjsmhFm2DQCbF72aCz076Q=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtTodo:label=Criar baseline para o projeto|completed=2023-03-30}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-20T21:26:14.167-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-04-20T23:25:02.151764-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "2IEA1L+zDQC6FsePAomVSg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtTodo:label=Padronizar nomes de argumentos dos métodos}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-20T21:24:45.113-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-20T21:24:45.113-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "wKKxzr+zDQC20b7kAomVSg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"code" : "ZnClient new\n   url: urlBase , serviceEndPoint;\r   headerAt: 'Authorization' put: 'Bearer 4302917e-c0bd-4f02-a15b-b7cf42ad6f5c';   \n   get."
 			}
 		]
 	},
@@ -310,7 +403,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-03-20T21:21:46.012-03:00"
+			"dateAndTimeString" : "2023-04-24T08:19:14.916243-03:00"
 		}
 	},
 	"editEmail" : {
@@ -321,15 +414,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-06-01T15:59:45.6-03:00"
+			"dateAndTimeString" : "2023-06-01T15:59:03.646-03:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "desenv - Todo List"
+		"title" : "ddd - POST in the Mock API Server"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "78c504c4-bfb3-0d00-b176-a2800289954a"
+		"uuid" : "8e1ca8c2-58b6-0d00-b62d-c8740cf541c0"
 	}
 }
