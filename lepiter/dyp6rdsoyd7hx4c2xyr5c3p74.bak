@@ -55,6 +55,40 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-01T16:32:02.691-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-01T16:35:33.244-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "0LdOOni5DQCv5YroA3yDqw=="
+				},
+				"code" : "sga := {'modelName' -> 'sga' .\r\t\t'baseNamespace' -> 'EBAPE' } asDictionary.\r\rplan := {'modelName' -> 'planejamento' .\r\t\t'baseNamespace' -> 'planejamento' } asDictionary.\r\rproject := sga.\r"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2023-06-01T15:45:25.903-03:00"
 					}
 				},
@@ -66,446 +100,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-01T15:46:05.284-03:00"
+						"dateAndTimeString" : "2023-06-01T16:35:59.04-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "sB6bk3e5DQCrl5FaA3yDqw=="
 				},
-				"code" : "model := MooseModel root allModels detect: [ :each | each name = 'sga' ]"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-10-27T18:17:43.583-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-10-27T18:17:45.778-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "qLiWaGyoDQC58NxbARt40Q=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "References:"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-10-26T18:37:41.221-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-10-26T18:37:41.221-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "4CodklioDQCqxBGvCU9e+g=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtPage:Mondrian|db=2j9m7db2i4oz116bexd7wbdxo}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-30T15:26:01.447-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-30T15:26:02.752-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "kLO2klioDQCqxlKjCU9e+g=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtPage:How Mondrian relates to Bloc|db=2j9m7db2i4oz116bexd7wbdxo}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-25T17:49:26.398-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-25T17:49:46.649-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "yCT5kT+VDQCkJTPhDbugTA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "### Namespace Hierarchy"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-15T18:15:05.685-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-10-27T18:04:51.482-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "IBiWw3aUDQCF9hsfC6Ribw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "A simple GtMondrian view of packages from the model using UML like nodes. We show packages related with theirs subpackages.  "
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-13T12:35:35.715-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-23T13:17:41.614-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "uEjCyUmUDQCq1ERRDN63/Q=="
-				},
-				"code" : "view := GtMondrian new.\r\nview nodes\r\n\tumlClassShapeWithName: [ :each | each name ];\t\r\n\twith: model allModelNamespaces.\r\t\t\t\r\nview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tconnectToAll: #childrenOfMyKind.\r\t\r\nview layout tree levelDistance: 100.\r\"view layout tree nodeDistance: 100.\"\rview asScalableElement zoomLevel: 10.\rview\r"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-15T17:57:05.938-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-15T18:36:21.113-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "aEvfgXaUDQCFv0ABC6Ribw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "The same view before, but now coloring the nodes. We can also try different layouts (e.g.  horizontalTree). "
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-14T14:30:27.118-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-14T14:35:28.649-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "sB9cgl+UDQCTha9gCu6j9g=="
-				},
-				"code" : "view := GtMondrian new.\r\nview nodes\r\n\tshape: [ :each | \r\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\tlabel: each name asString;\r\t\t\tbackground: Color paleOrange ];\t\r\n\twith: model allModelNamespaces.\r\t\t\t\r\nview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tconnectToAll: #childrenOfMyKind.\r\t\r\nview layout tree  levelDistance: 100.\rview"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-15T17:58:10.625-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-15T18:37:25.92-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "WHg2hnaUDQCFwBTIC6Ribw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Here, first, nodes are packages. Then, we add for each package its classes. Finally we link packages with subpackages and contained classes. \r\n\r\nWe colored packages as pale orange and classes as pale blue. \r\n\r\nIt is very difficult to see without some kind of zoom."
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-13T23:00:05.398-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-14T22:15:52.164-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "wE0gg1KUDQC9BdEdCMEIqQ=="
-				},
-				"code" : "namespaces := model allModelNamespaces.\rview := GtMondrian new.\r\n\rview nodes\r\n\tshape: [ :each | \r\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\tlabel: each name asString;\r\t\t\tbackground: Color paleOrange ];\r\n\twith: namespaces.\r\t\rnamespaces collect: [ :nm | \r\t\t\t\t\t\tview nodes\r\t\t\t\t\t\t\tshape: [ :each | \r\t\t\t\t\t\t\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\t\t\t\t\t\t\tlabel: each name asString;\r\t\t\t\t\t\t\t\t\tbackground: Color paleBlue ];\r\t\t\t\t\t\t\twith: nm classes ].\t\r\nview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tconnectToAll: #children.\r\t\r\nview layout tree  levelDistance: 100.\rview"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-15T18:01:19.914-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-15T18:08:03.972-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "0PcUknaUDQCFwmOqC6Ribw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Here, I keep the relation of packages and subpackages but the inner classes of a package is represented nested to the package node. \r\n\r\nI colored the package node and the background of the class name inside it. \r\n\r\nI also applied a zoom in the complete view.\r\n\r\nReference: {{gtClass:GtMondrianClassHierarchyExamples}}"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-13T21:41:52.778-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-02T17:39:31.726-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "EJNsa1GUDQCpCHe2A4dvoA=="
-				},
-				"code" : "namespaces := model allNamespaces.\r\rview := GtMondrian new.\r\nview nodes\r\n\tshape: [ :each | \r\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\tlabel: each name asString;\r\t\t\tbackground: Color paleOrange ];\t\r\n\twith: namespaces;\r\tforEach: [ :namespace | \r\t\tview nodes\r\t\t\tshape: [ :class | \r\t\t\t\tBlTextElement new\r\t\t\t\t\ttext: class name asRopedText;\r\t\t\t\t\tbackground: Color paleBlue;\r\t\t\t\t\tpadding:\r\t\t\t\t\t\t(BlInsets\r\t\t\t\t\t\t\ttop: 5\r\t\t\t\t\t\t\tright: 5\r\t\t\t\t\t\t\tbottom: 5\r\t\t\t\t\t\t\tleft: 5) ];\r\t\t\twith: namespace classes.\r\t\tview layout custom: BlLinearLayout vertical ].\t\t\t\t\r\nview edges \r\n\tconnectToAll: #childrenOfMyKind.\r\nview layout tree levelDistance: 100.\rview layout tree nodeDistance: 100.\rview asScalableElement zoomLevel: 1.\rview"
+				"code" : "model := MooseModel root allModels detect: [ :each | each name = (project at: 'modelName') ]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -569,14 +171,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-07T10:42:30.596-03:00"
+						"dateAndTimeString" : "2023-06-01T16:36:33.261-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "0AD4m+SoDQCyrnZkCHjtFw=="
 				},
-				"code" : "selectedNamespaces := model allNamespaces select: [ :ns | (ns asString findString: baseNamespace) > 0 ].\r\n"
+				"code" : "selectedNamespaces := model allNamespaces select: [ :ns | (ns asString findString: (project at: 'baseNamespace')) > 0 ].\r\n"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -773,14 +375,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-23T13:40:10.629-03:00"
+						"dateAndTimeString" : "2023-06-01T16:58:19.389-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "iLx4U3qUDQCbp99RDQXsVA=="
 				},
-				"code" : "view := GtMondrian new.\r\nview nodes\r\n\tshape: [ :each | \r\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\tlabel: each name asString;\r\t\t\tbackground: Color paleOrange ];\t\r\n\twith: selectedNamespaces.\r\t\rview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tconnectToAll: #childrenOfMyKind.\t\r\t\t\t\t\rview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tareEdgesPassive: true;\r\tstencil: [ :each | \r\t\t\t\tBlParabollaArcElement new\r\t\t\t\t\tcurvatureFraction: 0.1;\r\t\t\t\t\t\"preventMouseEvents;\"\r\t\t\t\t\tborder: (BlBorder \r\t\t\t\t\t\t\t\t\tpaint: (Color red \r\t\t\t\t\t\t\t\t\t\t\t\talpha: 0.2) \r\t\t\t\t\t\t\t\t\twidth: 2);\r\t\t\t\t\ttoHead: (BlArrowheadSimpleArrow new\r\t\t\t\t\t\t\t\t\tborder: (BlBorder builder \r\t\t\t\t\t\t\t\t\t\t\t\t\tpaint: (Color red \r\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\talpha: 0.2); \r\t\t\t\t\t\t\t\t\t\t\t\t\twidth: 2; \r\t\t\t\t\t\t\t\t\t\t\t\t\tbuild))\r\t\t\t];\r\tconnectFromAll: [:node | \r\t\t\t\t\t\t((node queryAllIncoming select: \r\t\t\t\t\t\t\t[ :assoc | \r\t\t\t\t\t\t\t\t((assoc anyTo \r\t\t\t\t\t\t\t\t\t\tatScope: FAMIXNamespace) at: 1) = node ]) \r\t\t\t\t\t\t\t\t\t\t\tatScope: FAMIXNamespace) withoutSelfLoops\r\t\t\t\t\t\t].\r\t\r\n\"view layout tree levelDistance: 100.\"\rview layout dominanceTree.\rview asScalableElement zoomLevel: 1.\r\rview"
+				"code" : "view := GtMondrian new.\r\nview nodes\r\n\tshape: [ :each | \r\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\tlabel: each name asString;\r\t\t\tbackground: Color paleOrange;\r\t\t\twidth: (each numberOfClasses max:5);\r\t\t\theight: (each numberOfLinesOfCode min: 100) ];\t\r\n\twith: selectedNamespaces.\r\t\rview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tconnectToAll: #childrenOfMyKind.\t\r\t\t\t\t\rview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tareEdgesPassive: true;\r\tstencil: [ :each | \r\t\t\t\tBlParabollaArcElement new\r\t\t\t\t\tcurvatureFraction: 0.1;\r\t\t\t\t\t\"preventMouseEvents;\"\r\t\t\t\t\tborder: (BlBorder \r\t\t\t\t\t\t\t\t\tpaint: (Color red \r\t\t\t\t\t\t\t\t\t\t\t\talpha: 0.2) \r\t\t\t\t\t\t\t\t\twidth: 2);\r\t\t\t\t\ttoHead: (BlArrowheadSimpleArrow new\r\t\t\t\t\t\t\t\t\tborder: (BlBorder builder \r\t\t\t\t\t\t\t\t\t\t\t\t\tpaint: (Color red \r\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\talpha: 0.2); \r\t\t\t\t\t\t\t\t\t\t\t\t\twidth: 2; \r\t\t\t\t\t\t\t\t\t\t\t\t\tbuild))\r\t\t\t];\r\tconnectFromAll: [:node | \r\t\t\t\t\t\t((node queryAllIncoming select: \r\t\t\t\t\t\t\t[ :assoc | \r\t\t\t\t\t\t\t\t((assoc anyTo \r\t\t\t\t\t\t\t\t\t\tatScope: FAMIXNamespace) at: 1) = node ]) \r\t\t\t\t\t\t\t\t\t\t\tatScope: FAMIXNamespace) withoutSelfLoops\r\t\t\t\t\t\t].\r\t\r\nview layout tree \r\tlevelDistance: 100;\r\tnodeDistance: 50.\r\"view layout dominanceTree.\"\rview asScalableElement zoomLevel: 1.\r\rview"
 			},
 			{
 				"__type" : "textSnippet",
@@ -1115,12 +717,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-31T23:21:28.715-03:00"
+			"dateAndTimeString" : "2023-06-01T16:19:17.648-03:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "software-assessment - Dependency Analysis from the Moose Model"
+		"title" : "software-assessment - Dependency Analysis"
 	},
 	"uid" : {
 		"__type" : "uuid",

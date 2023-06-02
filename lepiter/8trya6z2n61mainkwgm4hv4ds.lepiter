@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-01T15:47:08.306-03:00"
+						"dateAndTimeString" : "2023-06-01T16:20:54.562-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "mPiDmHe5DQCr23MlA3yDqw=="
 				},
-				"code" : "model := MooseModel root allModels detect: [ :each | each name = 'planejamento' ]"
+				"code" : "model := MooseModel root allModels detect: [ :each | each name = 'sga' ]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -137,85 +137,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-10-27T18:04:51.636-03:00"
+						"dateAndTimeString" : "2023-06-01T16:21:25.225-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "CAlua76UDQCzDOejD0xZPw=="
 				},
-				"code" : "namespaces := model allModelNamespaces.\r\rview := GtMondrian new.\r\nview nodes\r\n\tshape: [ :each | \r\t\t\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\t\tlabel: each name asString;\r\t\t\t\tbackground: Color paleOrange ];\t\r\n\twith: (namespaces)\r\tforEach: [ :namespace | \r\t\tview nodes\r\t\t\twith: (namespace classes).\t\r\r\t\tview edges \r\t\t\tfromCenterBottom;\r\t\t\ttoCenterTop;\r\t\t\tconnectFrom: #superclass.\r\t\tview layout custom: (GtGraphTreeLayout new)].\t\t\t\t\r\n\rview edges \r\tfromCenterBottom;\r\ttoCenterTop;\r\n\tconnectToAll: #childrenOfMyKind.\r\t\r\nview layout tree levelDistance: 100.\rview layout tree nodeDistance: 50.\rview asScalableElement zoomLevel: 1.\rview"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-10-27T18:11:04.793-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-10-27T18:16:17.528-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "qGhjUGyoDQC55jPKARt40Q=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "## Visualizing the hierarchy of a class in Pharo"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-10-27T18:11:23.472-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-10-27T18:11:24.776-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "gKgIUmyoDQC55zUqARt40Q=="
-				},
-				"code" : "view := GtMondrian new.\r\nview nodes\r\n\tumlClassShapeWithName: [ :each | each name ];\t\r\n\twith: Collection allSubclasses.\t\r\t\t\t\r\nview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tconnectToAll: #subclasses.\r\t\r\nview layout tree levelDistance: 100.\rview layout tree nodeDistance: 20.\rview asScalableElement zoomLevel: 5.\rview"
+				"code" : "namespaces := model allModelNamespaces.\r\rview := GtMondrian new.\r\nview nodes\r\n\tshape: [ :each | \r\t\t\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\t\tlabel: each name asString;\r\t\t\t\tbackground: Color paleOrange ];\t\r\n\twith: (namespaces)\r\tforEach: [ :namespace | \r\t\tview nodes\r\t\t\twith: (namespace classes).\t\r\r\t\tview edges \r\t\t\tfromCenterBottom;\r\t\t\ttoCenterTop;\r\t\t\tconnectFrom: #superclass.\r\t\tview layout custom: (GtGraphTreeLayout new)].\t\t\t\t\r\n\rview edges \r\tfromCenterBottom;\r\ttoCenterTop;\r\n\tconnectToAll: #childrenOfMyKind.\r\t\r\nview layout tree levelDistance: 100.\rview layout tree nodeDistance: 50.\rview asScalableElement zoomLevel: 10.\rview"
 			}
 		]
 	},
@@ -238,12 +167,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-06-01T16:01:33.851-03:00"
+			"dateAndTimeString" : "2023-06-01T16:25:41.148-03:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "software-assessment - Exploring Visualizations for the Planning Module with Mondrian"
+		"title" : "software-assessment - Exploring Visualizations"
 	},
 	"uid" : {
 		"__type" : "uuid",
