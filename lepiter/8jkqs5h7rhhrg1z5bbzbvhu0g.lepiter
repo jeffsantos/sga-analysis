@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T14:49:35.183-03:00"
+						"dateAndTimeString" : "2023-06-05T14:46:17.722-03:00"
 					}
 				},
 				"editEmail" : {
@@ -29,12 +29,12 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T14:49:37.163-03:00"
+						"dateAndTimeString" : "2023-06-05T14:47:11.874-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "mLRAQ8e5DQCJGldGC5VQkA=="
+					"uidString" : "kLB7N8e5DQCIdHmRC5VQkA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-01T15:45:25.903-03:00"
+						"dateAndTimeString" : "2023-06-05T14:47:17.587-03:00"
 					}
 				},
 				"editEmail" : {
@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T14:49:26.699-03:00"
+						"dateAndTimeString" : "2023-06-05T14:47:23.9-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "sB6bk3e5DQCrl5FaA3yDqw=="
+					"uidString" : "UCQNO8e5DQCIi4twC5VQkA=="
 				},
-				"code" : "model := MooseModel root allModels detect: [ :each | each name = 'sga' ]"
+				"code" : "sga := {'modelName' -> 'sga' .\r\t\t'baseNamespace' -> 'EBAPE' } asDictionary.\r\rplan := {'modelName' -> 'planejamento' .\r\t\t'baseNamespace' -> 'planejamento' } asDictionary.\r\rproject := sga."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -89,7 +89,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T15:44:37.291-03:00"
+						"dateAndTimeString" : "2023-06-05T14:47:34.475-03:00"
 					}
 				},
 				"editEmail" : {
@@ -100,14 +100,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T15:44:43.011-03:00"
+						"dateAndTimeString" : "2023-06-05T14:47:34.936-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "ENwSCMi5DQCW/YWMC5VQkA=="
+					"uidString" : "ENUOPMe5DQCIlG5+C5VQkA=="
 				},
-				"code" : "namespaces := model allModelNamespaces"
+				"code" : "model := MooseModel root allModels detect: [ :each | each name = (project at: 'modelName') ]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -123,7 +123,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T15:44:46.132-03:00"
+						"dateAndTimeString" : "2023-06-05T14:50:37.026-03:00"
 					}
 				},
 				"editEmail" : {
@@ -134,17 +134,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T15:45:43.868-03:00"
+						"dateAndTimeString" : "2023-06-05T14:50:40.924-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "UL+ZCMi5DQCXBgyLC5VQkA=="
+					"uidString" : "0FrwRse5DQCJJJeQC5VQkA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Load previous selected namespaces from [[software-assessment - Filtering namespaces and classes of SGA models]]"
+				"string" : "## SGA Core"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -160,7 +160,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T15:45:46.484-03:00"
+						"dateAndTimeString" : "2023-06-05T14:47:45.732-03:00"
 					}
 				},
 				"editEmail" : {
@@ -171,14 +171,150 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T15:45:53.174-03:00"
+						"dateAndTimeString" : "2023-06-05T14:48:00.923-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "OKkyDMi5DQCYByipC5VQkA=="
+					"uidString" : "0JW6PMe5DQCInaYyC5VQkA=="
 				},
-				"code" : "namespaces := MoldableAnalysis current selectedNamespaces"
+				"code" : "selectedNamespaces := model allNamespaces select: [ :ns | (ns asString findString: (project at: 'baseNamespace')) > 0 ]."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T14:47:47.766-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T14:48:07.344-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "CKPZPMe5DQCIoTu6C5VQkA=="
+				},
+				"code" : "selectedNamespaces := selectedNamespaces reject: [ :ns | (ns asString matchesRegex: 'FGV \\(Namespace\\)\\:\\:EBAPE \\(Namespace\\)\\:\\:Web \\(Namespace\\)\\:\\:Models \\(Namespace\\)\\:\\:.*') ]."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T14:47:53.054-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T14:48:13.061-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "SFMqPce5DQCIpcM8C5VQkA=="
+				},
+				"code" : "selectedNamespaces := selectedNamespaces reject: [ :ns | (ns asString matchesRegex: 'FGV \\(Namespace\\)\\:\\:EBAPE \\(Namespace\\)\\:\\:Web \\(Namespace\\)\\:\\:Utils \\(Namespace\\)\\:\\:.*') ]."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T14:47:55.389-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T14:48:22.931-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kOxNPce5DQCIqV8EC5VQkA=="
+				},
+				"code" : "selectedNamespaces := selectedNamespaces reject: [ :ns | (ns asString findString: 'Test') > 0 ]."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T14:47:57.555-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T14:48:29.477-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UAFvPce5DQCIrWAsC5VQkA=="
+				},
+				"code" : "selectedNamespaces := selectedNamespaces reject: [ :ns | (ns asString findString: 'console') > 0 ]."
 			},
 			{
 				"__type" : "textSnippet",
@@ -194,7 +330,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-14T22:54:13.679383-03:00"
+						"dateAndTimeString" : "2023-06-05T14:51:06.058-03:00"
 					}
 				},
 				"editEmail" : {
@@ -205,17 +341,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-14T22:54:25.196586-03:00"
+						"dateAndTimeString" : "2023-06-05T14:51:20.566-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "+MsAGHeUDQCbbsOJDQXsVA=="
+					"uidString" : "2AtzR8e5DQCJX+U9C5VQkA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "### Dependency Analysis"
+				"string" : "## Scheduling (módulo de Planejamento)"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -231,7 +367,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-15T22:30:04.581-03:00"
+						"dateAndTimeString" : "2023-06-05T14:47:59.567-03:00"
 					}
 				},
 				"editEmail" : {
@@ -242,14 +378,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T15:47:13.05-03:00"
+						"dateAndTimeString" : "2023-06-05T14:48:36.344-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "iLx4U3qUDQCbp99RDQXsVA=="
+					"uidString" : "sLSNPce5DQCIsTctC5VQkA=="
 				},
-				"code" : "view := GtMondrian new.\r\nview nodes\r\n\tshape: [ :each | \r\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\tlabel: each name asString;\r\t\t\tbackground: Color paleOrange ];\t\r\n\twith: namespaces.\r\t\rview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tconnectToAll: #childrenOfMyKind.\t\r\t\t\t\t\rview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tareEdgesPassive: true;\r\tstencil: [ :each | \r\t\t\t\tBlParabollaArcElement new\r\t\t\t\t\tcurvatureFraction: 0.1;\r\t\t\t\t\t\"preventMouseEvents;\"\r\t\t\t\t\tborder: (BlBorder \r\t\t\t\t\t\t\t\t\tpaint: (Color red \r\t\t\t\t\t\t\t\t\t\t\t\talpha: 0.2) \r\t\t\t\t\t\t\t\t\twidth: 2);\r\t\t\t\t\ttoHead: (BlArrowheadSimpleArrow new\r\t\t\t\t\t\t\t\t\tborder: (BlBorder builder \r\t\t\t\t\t\t\t\t\t\t\t\t\tpaint: (Color red \r\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\talpha: 0.2); \r\t\t\t\t\t\t\t\t\t\t\t\t\twidth: 2; \r\t\t\t\t\t\t\t\t\t\t\t\t\tbuild))\r\t\t\t];\r\tconnectFromAll: [:node | \r\t\t\t\t\t\t((node queryAllIncoming select: \r\t\t\t\t\t\t\t[ :assoc | \r\t\t\t\t\t\t\t\t((assoc anyTo \r\t\t\t\t\t\t\t\t\t\tatScope: FAMIXNamespace) at: 1) = node ]) \r\t\t\t\t\t\t\t\t\t\t\tatScope: FAMIXNamespace) withoutSelfLoops\r\t\t\t\t\t\t].\r\t\r\nview layout tree \r\tlevelDistance: 100;\r\tnodeDistance: 50.\r\"view layout dominanceTree.\"\rview asScalableElement zoomLevel: 1.\r\rview"
+				"code" : "selectedNamespaces := selectedNamespaces reject: [ :ns | (ns asString = 'planejamento (Namespace)') ]."
 			},
 			{
 				"__type" : "textSnippet",
@@ -265,7 +401,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-14T22:55:15.715273-03:00"
+						"dateAndTimeString" : "2023-06-05T14:45:26.063-03:00"
 					}
 				},
 				"editEmail" : {
@@ -276,17 +412,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-14T22:55:30.635029-03:00"
+						"dateAndTimeString" : "2023-06-05T15:17:05.117-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "fVxDYtqpDQC7R5twBpLOtg=="
+					"uidString" : "mG9nNMe5DQCIcxfUC5VQkA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "### Classes Relationships"
+				"string" : "## Save to be used in other pages"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -302,7 +438,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-07T22:05:10.991-03:00"
+						"dateAndTimeString" : "2023-06-05T15:18:45.365-03:00"
 					}
 				},
 				"editEmail" : {
@@ -313,14 +449,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T15:48:41.033-03:00"
+						"dateAndTimeString" : "2023-06-05T15:39:45.472-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "gMBk3kypDQCmVW34DHdkSg=="
+					"uidString" : "IFmSq8e5DQCSnmvNC5VQkA=="
 				},
-				"code" : "ns := namespaces at: 1."
+				"code" : "MoldableAnalysis initialize"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -336,7 +472,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-07T22:04:46.519-03:00"
+						"dateAndTimeString" : "2023-06-05T15:37:19.149-03:00"
 					}
 				},
 				"editEmail" : {
@@ -347,221 +483,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-16T22:06:04.14-03:00"
+						"dateAndTimeString" : "2023-06-05T15:40:00.819-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "wFbv3EypDQCmVNlNDHdkSg=="
+					"uidString" : "+FP17ce5DQCUSM0sC5VQkA=="
 				},
-				"code" : "selectedClasses := ns allClasses.\r\rview := GtMondrian new.\r\nview nodes\r\n\tshape: [ :each | \r\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\tlabel: each name asString;\r\t\t\tbackground: Color paleOrange ];\t\r\n\twith: selectedClasses.\r\t\rview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tconnectFromAll: [:node | \r\t\t\t\t\t\t(((node query: #in with: FAMIXInheritance) select: \r\t\t\t\t\t\t\t[ :assoc | \r\t\t\t\t\t\t\t\t((assoc anyTo \r\t\t\t\t\t\t\t\t\t\tatScope: FAMIXType) at: 1) = node ]) \r\t\t\t\t\t\t\t\t\t\t\tatScope: FAMIXType) withoutSelfLoops\r\t\t\t\t\t].\r\t\t\t\t\rview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tareEdgesPassive: true;\r\tstencil: [ :each | \r\t\t\t\tBlLineElement new\r\t\t\t\t\t\"preventMouseEvents;\"\r\t\t\t\t\tborder: (BlBorder \r\t\t\t\t\t\t\t\t\tpaint: (Color red \r\t\t\t\t\t\t\t\t\t\t\t\talpha: 0.2) \r\t\t\t\t\t\t\t\t\twidth: 2);\r\t\t\t\t\ttoHead: (BlArrowheadSimpleArrow new\r\t\t\t\t\t\t\t\t\tborder: (BlBorder builder \r\t\t\t\t\t\t\t\t\t\t\t\t\tpaint: (Color red \r\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\talpha: 0.2); \r\t\t\t\t\t\t\t\t\t\t\t\t\twidth: 2; \r\t\t\t\t\t\t\t\t\t\t\t\t\tbuild))\r\t\t\t];\r\tconnectFromAll: [:node | \r\t\t\t\t\t\t(((node query: #in with: FAMIXInvocation) select: \r\t\t\t\t\t\t\t[ :assoc | \r\t\t\t\t\t\t\t\t((assoc anyTo \r\t\t\t\t\t\t\t\t\t\tatScope: FAMIXType) at: 1) = node ]) \r\t\t\t\t\t\t\t\t\t\t\tatScope: FAMIXType) withoutSelfLoops\r\t\t\t\t\t\t].\r\t\r\nview layout circle.\rview asScalableElement zoomLevel: 1.\r\rview"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-25T17:53:02.448-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-25T17:53:04.561-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "8B8Fnz+VDQCkJiWfDbugTA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Tests:"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-14T07:25:08.598-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-14T07:25:21.187-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "8GhWkVmUDQC1gVDHBMAzrA=="
-				},
-				"code" : "model allModelNamespaces asOrderedCollection"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-13T16:11:18.979-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-10-26T12:41:33.701-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "uNE8zUyUDQCq5GOcDN63/Q=="
-				},
-				"code" : "(model allModelNamespaces asOrderedCollection at:3) children"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-10-26T12:43:19.973-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-10-26T12:43:34.006-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "iOz2nlOoDQCf0/p1A63ZOw=="
-				},
-				"code" : "(model allModelNamespaces asOrderedCollection at:3) childrenOfMyKind"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-14T07:26:50.464-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-10-26T12:41:41.387-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "AMNol1mUDQC1iA7HBMAzrA=="
-				},
-				"code" : "(model allModelNamespaces asOrderedCollection at:3) clientTypes"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-30T15:28:49.684-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-30T15:28:51.668-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "OEaLHE+5DQCh68RiCnoXUg=="
-				},
-				"code" : "model"
+				"code" : "MoldableAnalysis current selectedNamespaces: selectedNamespaces"
 			}
 		]
 	},
@@ -573,7 +502,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-02-12T23:25:32.562-03:00"
+			"dateAndTimeString" : "2023-06-05T14:46:12.821-03:00"
 		}
 	},
 	"editEmail" : {
@@ -584,15 +513,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-06-01T16:19:17.648-03:00"
+			"dateAndTimeString" : "2023-06-05T14:46:12.821-03:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "software-assessment - Dependency Analysis"
+		"title" : "software-assessment - Filtering namespaces and classes of SGA models"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "50924fc0-3e94-0d00-b051-51e307e0ddeb"
+		"uuid" : "302d6734-c7b9-0d00-8872-18090b955090"
 	}
 }

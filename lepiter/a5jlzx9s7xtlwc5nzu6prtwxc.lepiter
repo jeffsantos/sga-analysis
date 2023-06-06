@@ -76,6 +76,111 @@
 				"code" : "model := MooseModel root allModels detect: [ :each | each name = 'sga' ]"
 			},
 			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T15:41:49.725-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T15:42:21.269-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "SAUW/se5DQCWKvZxC5VQkA=="
+				},
+				"code" : "namespaces := model allModelNamespaces"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T15:40:49.987-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T15:45:25.053-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "0HmG+se5DQCVvyPaC5VQkA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Load previous selected namespaces from [[software-assessment - Filtering namespaces and classes of SGA models]]"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T15:40:38.623-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T15:42:24.846-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "GBfZ+ce5DQCVtqX7C5VQkA=="
+				},
+				"code" : "namespaces := MoldableAnalysis current selectedNamespaces"
+			},
+			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -285,14 +390,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-01T16:16:07.726-03:00"
+						"dateAndTimeString" : "2023-06-05T15:42:33.052-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "IFv4/He5DQCutTI/A3yDqw=="
 				},
-				"code" : "view := GtMondrian new.\r\nview nodes\r\n\tumlClassShapeWithName: [ :each | each name ];\t\r\n\twith: model allModelNamespaces.\r\t\t\t\r\nview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tconnectToAll: #childrenOfMyKind.\r\t\r\nview layout tree levelDistance: 100.\r\"view layout tree nodeDistance: 100.\"\rview asScalableElement zoomLevel: 10.\rview"
+				"code" : "view := GtMondrian new.\r\nview nodes\r\n\tumlClassShapeWithName: [ :each | each name ];\t\r\n\twith: namespaces.\r\t\t\t\r\nview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tconnectToAll: #childrenOfMyKind.\r\t\r\nview layout tree levelDistance: 100.\r\"view layout tree nodeDistance: 100.\"\rview asScalableElement zoomLevel: 1.\rview"
 			},
 			{
 				"__type" : "textSnippet",
@@ -356,14 +461,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-01T16:16:31.696-03:00"
+						"dateAndTimeString" : "2023-06-05T15:42:40.409-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "EPukAXi5DQCvIoKZA3yDqw=="
 				},
-				"code" : "view := GtMondrian new.\r\nview nodes\r\n\tshape: [ :each | \r\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\tlabel: each name asString;\r\t\t\tbackground: Color paleOrange ];\t\r\n\twith: model allModelNamespaces.\r\t\t\t\r\nview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tconnectToAll: #childrenOfMyKind.\r\t\r\nview layout tree  levelDistance: 100.\rview"
+				"code" : "view := GtMondrian new.\r\nview nodes\r\n\tshape: [ :each | \r\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\tlabel: each name asString;\r\t\t\tbackground: Color paleOrange ];\t\r\n\twith: namespaces.\r\t\t\t\r\nview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tconnectToAll: #childrenOfMyKind.\r\t\r\nview layout tree  levelDistance: 100.\rview"
 			},
 			{
 				"__type" : "textSnippet",
@@ -427,14 +532,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-01T16:31:35.401-03:00"
+						"dateAndTimeString" : "2023-06-05T15:42:50.966-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "WKGlA3i5DQCvPXX3A3yDqw=="
 				},
-				"code" : "namespaces := model allModelNamespaces.\rview := GtMondrian new.\r\n\rview nodes\r\n\tshape: [ :each | \r\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\tlabel: each name asString;\r\t\t\tbackground: Color paleOrange ];\r\n\twith: namespaces.\r\t\rnamespaces collect: [ :nm | \r\t\t\t\t\t\tview nodes\r\t\t\t\t\t\t\tshape: [ :each | \r\t\t\t\t\t\t\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\t\t\t\t\t\t\tlabel: each name asString;\r\t\t\t\t\t\t\t\t\tbackground: Color paleBlue ];\r\t\t\t\t\t\t\twith: nm classes ].\t\r\nview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tconnectToAll: #children.\r\t\r\nview layout tree  levelDistance: 100.\rview"
+				"code" : "view := GtMondrian new.\r\n\rview nodes\r\n\tshape: [ :each | \r\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\tlabel: each name asString;\r\t\t\tbackground: Color paleOrange ];\r\n\twith: namespaces.\r\t\rnamespaces collect: [ :nm | \r\t\t\t\t\t\tview nodes\r\t\t\t\t\t\t\tshape: [ :each | \r\t\t\t\t\t\t\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\t\t\t\t\t\t\tlabel: each name asString;\r\t\t\t\t\t\t\t\t\tbackground: Color paleBlue ];\r\t\t\t\t\t\t\twith: nm classes ].\t\r\nview edges \r\n\tfromCenterBottom;\r\ttoCenterTop;\r\tconnectToAll: #children.\r\t\r\nview layout tree  levelDistance: 100.\rview"
 			},
 			{
 				"__type" : "textSnippet",
@@ -498,14 +603,85 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-01T16:17:37.248-03:00"
+						"dateAndTimeString" : "2023-06-05T15:42:55.983-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "6IxaBXi5DQCvRnq3A3yDqw=="
 				},
-				"code" : "namespaces := model allNamespaces.\r\rview := GtMondrian new.\r\nview nodes\r\n\tshape: [ :each | \r\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\tlabel: each name asString;\r\t\t\tbackground: Color paleOrange ];\t\r\n\twith: namespaces;\r\tforEach: [ :namespace | \r\t\tview nodes\r\t\t\tshape: [ :class | \r\t\t\t\tBlTextElement new\r\t\t\t\t\ttext: class name asRopedText;\r\t\t\t\t\tbackground: Color paleBlue;\r\t\t\t\t\tpadding:\r\t\t\t\t\t\t(BlInsets\r\t\t\t\t\t\t\ttop: 5\r\t\t\t\t\t\t\tright: 5\r\t\t\t\t\t\t\tbottom: 5\r\t\t\t\t\t\t\tleft: 5) ];\r\t\t\twith: namespace classes.\r\t\tview layout custom: BlLinearLayout vertical ].\t\t\t\t\r\nview edges \r\n\tconnectToAll: #childrenOfMyKind.\r\nview layout tree levelDistance: 100.\rview layout tree nodeDistance: 100.\rview asScalableElement zoomLevel: 1.\rview"
+				"code" : "view := GtMondrian new.\r\nview nodes\r\n\tshape: [ :each | \r\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\tlabel: each name asString;\r\t\t\tbackground: Color paleOrange ];\t\r\n\twith: namespaces;\r\tforEach: [ :namespace | \r\t\tview nodes\r\t\t\tshape: [ :class | \r\t\t\t\tBlTextElement new\r\t\t\t\t\ttext: class name asRopedText;\r\t\t\t\t\tbackground: Color paleBlue;\r\t\t\t\t\tpadding:\r\t\t\t\t\t\t(BlInsets\r\t\t\t\t\t\t\ttop: 5\r\t\t\t\t\t\t\tright: 5\r\t\t\t\t\t\t\tbottom: 5\r\t\t\t\t\t\t\tleft: 5) ];\r\t\t\twith: namespace classes.\r\t\tview layout custom: BlLinearLayout vertical ].\t\t\t\t\r\nview edges \r\n\tconnectToAll: #childrenOfMyKind.\r\nview layout tree levelDistance: 100.\rview layout tree nodeDistance: 100.\rview asScalableElement zoomLevel: 1.\rview"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T14:42:27.015-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T14:42:47.967-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "cF27Kce5DQCGd1yNC5VQkA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Showing classes inside a package as small black boxes"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T12:46:18.181-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T15:43:45.351-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oGVbisW5DQCGZDKIC5VQkA=="
+				},
+				"code" : "view := GtMondrian new.\r\nview nodes\r\n\tshape: [ :each | \r\t\t\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\t\tlabel: each name asString;\r\t\t\t\tbackground: Color paleOrange ];\t\r\n\twith: (namespaces)\r\tforEach: [ :namespace | \r\t\tview nodes\r\t\t\twith: (namespace classes).\t\r\r\t\tview edges \r\t\t\tfromCenterBottom;\r\t\t\ttoCenterTop;\r\t\t\tconnectFrom: #superclass.\r\t\tview layout custom: (GtGraphTreeLayout new)].\t\t\t\t\r\n\rview edges \r\tfromCenterBottom;\r\ttoCenterTop;\r\n\tconnectToAll: #childrenOfMyKind.\r\t\r\nview layout tree levelDistance: 100.\rview layout tree nodeDistance: 50.\rview asScalableElement zoomLevel: 2.\rview"
 			}
 		]
 	},
