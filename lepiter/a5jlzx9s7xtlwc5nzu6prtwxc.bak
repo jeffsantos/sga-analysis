@@ -134,7 +134,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T15:45:07.363-03:00"
+						"dateAndTimeString" : "2023-06-05T15:45:25.053-03:00"
 					}
 				},
 				"uid" : {
@@ -144,7 +144,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Load previous selected namespaces [["
+				"string" : "Load previous selected namespaces from [[software-assessment - Filtering namespaces and classes of SGA models]]"
 			},
 			{
 				"__type" : "pharoSnippet",

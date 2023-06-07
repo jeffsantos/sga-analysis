@@ -674,14 +674,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T15:43:45.351-03:00"
+						"dateAndTimeString" : "2023-06-07T16:13:40.886-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "oGVbisW5DQCGZDKIC5VQkA=="
 				},
-				"code" : "view := GtMondrian new.\r\nview nodes\r\n\tshape: [ :each | \r\t\t\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\t\tlabel: each name asString;\r\t\t\t\tbackground: Color paleOrange ];\t\r\n\twith: (namespaces)\r\tforEach: [ :namespace | \r\t\tview nodes\r\t\t\twith: (namespace classes).\t\r\r\t\tview edges \r\t\t\tfromCenterBottom;\r\t\t\ttoCenterTop;\r\t\t\tconnectFrom: #superclass.\r\t\tview layout custom: (GtGraphTreeLayout new)].\t\t\t\t\r\n\rview edges \r\tfromCenterBottom;\r\ttoCenterTop;\r\n\tconnectToAll: #childrenOfMyKind.\r\t\r\nview layout tree levelDistance: 100.\rview layout tree nodeDistance: 50.\rview asScalableElement zoomLevel: 2.\rview"
+				"code" : "view := GtMondrian new.\r\nview nodes\r\n\tshape: [ :each | \r\t\t\t\tGtMondrianUMLClassElement withDefaultContainer \r\t\t\t\tlabel: each name asString;\r\t\t\t\tbackground: Color paleOrange ];\t\r\n\twith: (namespaces)\r\tforEach: [ :namespace | \r\t\tview nodes\r\t\t\twith: (namespace classes).\t\r\r\t\tview edges \r\t\t\tfromCenterBottom;\r\t\t\ttoCenterTop;\r\t\t\tconnectFrom: #superclass.\r\t\tview layout custom: (GtGraphTreeLayout new)].\t\t\t\t\r\n\rview edges \r\tfromCenterBottom;\r\ttoCenterTop;\r\n\tconnectToAll: #childrenOfMyKind.\r\t\r\nview layout tree levelDistance: 100.\rview layout tree nodeDistance: 50.\rview asScalableElement zoomLevel: 1.\rview"
 			}
 		]
 	},

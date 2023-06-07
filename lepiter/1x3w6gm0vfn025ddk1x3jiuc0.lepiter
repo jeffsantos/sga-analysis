@@ -239,14 +239,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-13T18:05:42.313-03:00"
+						"dateAndTimeString" : "2023-06-06T08:27:24.191-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "KAf/1sayDQCb//AyBvFsIA=="
 				},
-				"code" : "endpointDisciplines := 'Disciplinas'.\rendpointPrograms := 'Programas'.\rendpointClasses := 'Classes'.\rendpointProfessors := 'Professores'."
+				"code" : "endpointDisciplines := 'Disciplinas'.\rendpointPrograms := 'Programas'.\rendpointClasses := 'Classes'.\rendpointProfessors := 'Professores'.\rendPointActions := 'Acoes'.\rendPointRoles := 'Perfis'.\r\rendPoint := endPointRoles."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -273,14 +273,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-03T15:31:22.646-03:00"
+						"dateAndTimeString" : "2023-06-06T08:16:15.607-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "sA0Q2MayDQCcBr/VBvFsIA=="
 				},
-				"code" : "endPoint := endpointPrograms.\r\rjson := ZnClient new \r\t\t\turl: urlBase, endPoint;\r\t\t\theaderAt: 'Authorization' put: 'Bearer ',((authDict at: 'data') at: 'token');\r\t\t\tget."
+				"code" : "client := ZnClient new. \r\rclient \r\tenforceHttpSuccess: true;\r\turl: urlBase, endPoint;\r\theaderAt: 'Authorization' put: 'Bearer ',((authDict at: 'data') at: 'token');\r\tget."
 			},
 			{
 				"__type" : "pharoSnippet",

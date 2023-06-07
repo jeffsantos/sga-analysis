@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T14:47:23.9-03:00"
+						"dateAndTimeString" : "2023-06-07T16:31:08.321-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "UCQNO8e5DQCIi4twC5VQkA=="
 				},
-				"code" : "sga := {'modelName' -> 'sga' .\r\t\t'baseNamespace' -> 'EBAPE' } asDictionary.\r\rplan := {'modelName' -> 'planejamento' .\r\t\t'baseNamespace' -> 'planejamento' } asDictionary.\r\rproject := sga."
+				"code" : "sga := {'modelName' -> 'sga' .\r\t\t'baseNamespace' -> 'EBAPE' .\r\t\t'prefix' -> 'FGV (Namespace)::' } asDictionary.\r\rplan := {'modelName' -> 'planejamento' .\r\t\t'baseNamespace' -> 'planejamento'.\r\t\t'prefix' -> '' } asDictionary.\r\rproject := plan."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -110,6 +110,40 @@
 				"code" : "model := MooseModel root allModels detect: [ :each | each name = (project at: 'modelName') ]"
 			},
 			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-07T16:07:44.8-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-07T16:18:28.646-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "AFV1lvC5DQCyuTEHCBmIuw=="
+				},
+				"code" : "selectedNamespaces := model allNamespaces"
+			},
+			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -123,7 +157,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T14:50:37.026-03:00"
+						"dateAndTimeString" : "2023-06-07T16:33:09.222-03:00"
 					}
 				},
 				"editEmail" : {
@@ -134,17 +168,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T14:50:40.924-03:00"
+						"dateAndTimeString" : "2023-06-07T16:33:33.165-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "0FrwRse5DQCJJJeQC5VQkA=="
+					"uidString" : "UHHR8PC5DQC4wJSlCBmIuw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "## SGA Core"
+				"string" : "## Only namespaces with the system baseName"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -171,14 +205,122 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T14:48:00.923-03:00"
+						"dateAndTimeString" : "2023-06-07T16:08:08.035-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "0JW6PMe5DQCInaYyC5VQkA=="
 				},
-				"code" : "selectedNamespaces := model allNamespaces select: [ :ns | (ns asString findString: (project at: 'baseNamespace')) > 0 ]."
+				"code" : "selectedNamespaces := selectedNamespaces select: [ :ns | (ns asString findString: (project at: 'baseNamespace')) > 0 ]."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-07T16:33:36.822-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-07T16:33:58.499-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "CEv38vC5DQC5+uj1CBmIuw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Remove the top most namespace (the name of the project)"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-07T16:25:10.324-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-07T16:32:31.654-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "OL/G1PC5DQC2fXECCBmIuw=="
+				},
+				"code" : "selectedNamespaces := \r\tselectedNamespaces \r\t\treject: [ :ns | \r\t\t\t(ns asString = (\r\t\t\t\t(project at: 'prefix'),\r\t\t\t\t(project at: 'baseNamespace'),\r\t\t\t\t' (Namespace)') \r\t\t\t)]."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-05T14:50:37.026-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-07T16:12:08.693-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "0FrwRse5DQCJJJeQC5VQkA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "## SGA Core specific filters"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -249,6 +391,43 @@
 				"code" : "selectedNamespaces := selectedNamespaces reject: [ :ns | (ns asString matchesRegex: 'FGV \\(Namespace\\)\\:\\:EBAPE \\(Namespace\\)\\:\\:Web \\(Namespace\\)\\:\\:Utils \\(Namespace\\)\\:\\:.*') ]."
 			},
 			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-07T16:10:09.105-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-07T16:12:23.633-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "aEAPn/C5DQCzZx2gCBmIuw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "## Remove namespaces for Automated Tests"
+			},
+			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -283,6 +462,43 @@
 				"code" : "selectedNamespaces := selectedNamespaces reject: [ :ns | (ns asString findString: 'Test') > 0 ]."
 			},
 			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-07T16:11:07.237-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-07T16:11:47.441-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "iEaGovC5DQC1Ny/UCBmIuw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Remove namespaces for console applications"
+			},
+			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -315,77 +531,6 @@
 					"uidString" : "UAFvPce5DQCIrWAsC5VQkA=="
 				},
 				"code" : "selectedNamespaces := selectedNamespaces reject: [ :ns | (ns asString findString: 'console') > 0 ]."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T14:51:06.058-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T14:51:20.566-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "2AtzR8e5DQCJX+U9C5VQkA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "## Scheduling (módulo de Planejamento)"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T14:47:59.567-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-05T14:48:36.344-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "sLSNPce5DQCIsTctC5VQkA=="
-				},
-				"code" : "selectedNamespaces := selectedNamespaces reject: [ :ns | (ns asString = 'planejamento (Namespace)') ]."
 			},
 			{
 				"__type" : "textSnippet",
