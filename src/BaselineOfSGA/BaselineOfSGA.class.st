@@ -4,6 +4,16 @@ Class {
 	#category : #BaselineOfSGA
 }
 
+{ #category : #lepiter }
+BaselineOfSGA class >> loadLepiter [
+	| currentProperties |
+	currentProperties := LeDatabasesRegistry defaultLogicalDatabase properties.
+	currentProperties
+		addRegisteredDirectory: FileLocator imageDirectory / 'pharo-local' / 'iceberg' / 'jeffsantos'
+				/ 'sga-analysis' / 'lepiter'.
+	LeDatabasesRegistry default defaultLogicalDatabase reload
+]
+
 { #category : #baselines }
 BaselineOfSGA >> baseline: spec [
 	<baseline>
