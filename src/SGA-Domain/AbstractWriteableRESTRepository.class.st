@@ -8,6 +8,7 @@ Class {
 AbstractWriteableRESTRepository >> add: dict [
 	| json |
 	json := ZnClient new
+			"enforceHttpSuccess: true;"
 			"logToTranscript;"
 			url: self urlBase , self serviceEndPoint;
 			headerAt: 'Authorization' put: 'Bearer ' , self token;

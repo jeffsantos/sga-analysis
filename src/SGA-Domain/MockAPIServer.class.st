@@ -14,7 +14,7 @@ MockAPIServer class >> rebuildRoutes [
 
 { #category : #defaults }
 MockAPIServer >> createTeapotDefaultRoutes [
-	| mockData data |
+	| mockData data allIds id |
 	mockData := MockAPI createWithMockData.
 
 	data := Dictionary new.
@@ -53,12 +53,18 @@ MockAPIServer >> createTeapotDefaultRoutes [
 		POST: '/Disciplinas'
 				-> [ :request | 
 					| disc allDisciplines |
-					disc := {'codigo' -> (request at: #codigo).
-							'id' -> (request at: #id) asInteger.
+					disc := {'codigo' -> (request at: #codigo).						
 							'nome' -> (request at: #nome).
 							'cargaHoraria' -> (request at: #cargaHoraria) asInteger} asDictionary.
 
 					allDisciplines := mockData disciplines asOrderedCollection.
+					
+					allIds := allDisciplines collect: [ :each | each at: 'id'].
+					
+					id := allIds max + 1.
+					
+					disc at: 'id' put: id.
+					
 					allDisciplines add: disc.
 					mockData disciplines: allDisciplines.
 					data

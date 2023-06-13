@@ -6,10 +6,11 @@ Class {
 
 { #category : #action }
 DisciplineRESTRepository >> add: dict [
-	| returnedDict |
-	returnedDict := super add: dict.
+	| array |
+	array := super add: dict.
 	
-	^ Discipline newFromData: returnedDict
+	^ array
+		collect: [ :each | Discipline newFromData: each ]
 ]
 
 { #category : #accessing }
