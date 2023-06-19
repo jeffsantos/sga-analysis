@@ -416,6 +416,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "[[desenv - Loading the domain model from the SGA API]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-06-13T10:40:34.038539-03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-06-13T10:40:34.041625-03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "hCvwtmS6DQCF7dhsCXpscw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[desenv - Todo List]]"
 						}
 					]
 				},
@@ -449,43 +486,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "[[Domain Modeling Exploration]]"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-13T10:40:34.038539-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-13T10:40:34.041625-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "hCvwtmS6DQCF7dhsCXpscw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[desenv - Todo List]]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -591,6 +591,40 @@
 					"uidString" : "FGHB62S6DQCaB4oPChz+qg=="
 				},
 				"code" : "thisSnippet page uidString"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-13T11:11:01.788836-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-13T11:11:17.042749-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "nCddJGW6DQCyMfjsChz+qg=="
+				},
+				"code" : "thisSnippet knowledgeBase pages"
 			}
 		]
 	},
