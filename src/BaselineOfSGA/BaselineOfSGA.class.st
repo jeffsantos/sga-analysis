@@ -27,7 +27,7 @@ BaselineOfSGA >> baseline: spec [
 		
 			"Packages"
 			spec 
-				package: 'SGA-Infrastructure' with: [ spec requires: #('Tealight') ];
+				package: 'SGA-Infra' with: [ spec requires: #('Tealight') ];
 				package: 'SGA-Domain';
 				package: 'SGA-Domain-Tests' with: [ spec requires: #('SGA-Domain') ];
 				package: 'SGA-WebComponents' with: [ spec requires: #('SGA-Domain') ];
@@ -35,11 +35,11 @@ BaselineOfSGA >> baseline: spec [
 				
 			"Groups"
 			spec
-				group: 'Infra' with: #('SGA-Infrastructure');
+				group: 'Infra' with: #('SGA-Infra');
 				group: 'Model' with: #('SGA-Domain');
 				group: 'Tests' with: #('SGA-Domain-Tests');
-				group: 'Web' with: #('SGA-WebComponents' 'SGA-Domain' 'SGA-Infrastructure' 'SGA-Domain-Tests');
-				group: 'NonWeb' with: #('SGA-Domain' 'SGA-Infrastructure' 'SGA-Domain-Tests');
+				group: 'Web' with: #('SGA-WebComponents' 'SGA-Domain' 'SGA-Infra' 'SGA-Domain-Tests');
+				group: 'NonWeb' with: #('SGA-Domain' 'SGA-Infra' 'SGA-Domain-Tests');
 				group: 'Analysis' with: #('SGA-Analysis');
 				group: 'All' with: #('Web' 'Model' 'Infra' 'Tests')
 		]
