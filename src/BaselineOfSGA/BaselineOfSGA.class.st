@@ -38,7 +38,8 @@ BaselineOfSGA >> baseline: spec [
 				group: 'Infra' with: #('SGA-Infrastructure-REST');
 				group: 'Model' with: #('SGA-Domain');
 				group: 'Tests' with: #('SGA-Domain-Tests');
-				group: 'Web' with: #('SGA-WebComponents' 'SGA-Domain' 'SGA-Domain-Tests');
+				group: 'Web' with: #('SGA-WebComponents' 'SGA-Domain' 'SGA-Infrastructure-REST' 'SGA-Domain-Tests');
+				group: 'NonWeb' with: #('SGA-Domain' 'SGA-Infrastructure-REST' 'SGA-Domain-Tests');
 				group: 'Analysis' with: #('SGA-Analysis');
 				group: 'All' with: #('Web' 'Model' 'Infra' 'Tests')
 		]
