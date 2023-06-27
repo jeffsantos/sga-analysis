@@ -288,7 +288,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-26T22:51:05.572-03:00"
+						"dateAndTimeString" : "2023-06-26T22:51:06.205-03:00"
 					}
 				},
 				"uid" : {
@@ -298,44 +298,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtTodo:label=Impedir que não filhos das classes abstratas da API (readable e writable) usem os métodos getAll, getId e add"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-20T21:24:45.113-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-26T22:51:05.575-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "wKKxzr+zDQC20b7kAomVSg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "}}"
+				"string" : "{{gtTodo:label=Impedir que não filhos das classes abstratas da API (readable e writable) usem os métodos getAll, getId e add}}"
 			}
 		]
 	},
