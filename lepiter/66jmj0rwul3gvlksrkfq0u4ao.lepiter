@@ -344,14 +344,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-13T10:16:10.309894-03:00"
+						"dateAndTimeString" : "2023-06-26T22:47:17.255-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "E8UhiXa2DQCiKFn1BNJQQg=="
 				},
-				"code" : "discObj := Discipline new\r\t\t\t\t\tcode: 'GRAD003';\r\t\t\t\t\tname: 'Teste via lepiter';\r\t\t\t\t\tworkload: 45\r\t\t\t\t\t"
+				"code" : "discObj := Discipline new\r\t\t\t\t\tcode: 'GRAD004';\r\t\t\t\t\tname: 'Teste via lepiter';\r\t\t\t\t\tworkload: 45\r\t\t\t\t\t"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -412,14 +412,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-04-24T11:39:48.439153-03:00"
+						"dateAndTimeString" : "2023-06-26T22:47:37.833-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "DwYanXa2DQCkjkwOBNJQQg=="
 				},
-				"code" : "discRepo add:dict"
+				"code" : "discRepo addDiscipline:discObj"
 			},
 			{
 				"__type" : "textSnippet",

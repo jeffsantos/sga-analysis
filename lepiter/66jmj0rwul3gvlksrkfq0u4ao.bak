@@ -103,14 +103,82 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-08T12:27:03.91-03:00"
+						"dateAndTimeString" : "2023-06-13T10:21:36.65435-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "CAGYkpCwDQCfs8N+CgYwzA=="
 				},
-				"code" : "progRepo := ProgramRESTRepository createRESTRepository.\r\rprogRepo token.\r\rprogRepo programs.\r\raProgram := progRepo programId: 1.\r\raProgram cohorts"
+				"code" : "progRepo := ProgramRESTRepository createRESTRepository.\r\rprogRepo token.\r\rprogRepo programs."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-13T10:21:40.508944-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-13T10:21:48.92994-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "gpXbc2S6DQCD/sbaCXpscw=="
+				},
+				"code" : "aProgram := progRepo programId: 1."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-13T10:21:44.559048-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-13T10:21:52.329551-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "6WsZdGS6DQCEAhjpCXpscw=="
+				},
+				"code" : "aProgram cohorts"
 			},
 			{
 				"__type" : "textSnippet",
@@ -276,14 +344,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-13T10:16:10.309894-03:00"
+						"dateAndTimeString" : "2023-06-26T22:47:17.255-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "E8UhiXa2DQCiKFn1BNJQQg=="
 				},
-				"code" : "discObj := Discipline new\r\t\t\t\t\tcode: 'GRAD003';\r\t\t\t\t\tname: 'Teste via lepiter';\r\t\t\t\t\tworkload: 45\r\t\t\t\t\t"
+				"code" : "discObj := Discipline new\r\t\t\t\t\tcode: 'GRAD004';\r\t\t\t\t\tname: 'Teste via lepiter';\r\t\t\t\t\tworkload: 45\r\t\t\t\t\t"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -344,14 +412,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-04-24T11:39:48.439153-03:00"
+						"dateAndTimeString" : "2023-06-26T22:47:35.202-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "DwYanXa2DQCkjkwOBNJQQg=="
 				},
-				"code" : "discRepo add:dict"
+				"code" : "discRepo addDisc:discObj"
 			},
 			{
 				"__type" : "textSnippet",

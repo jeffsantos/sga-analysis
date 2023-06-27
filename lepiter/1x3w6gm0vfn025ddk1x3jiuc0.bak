@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-03T15:30:09.657-03:00"
+						"dateAndTimeString" : "2023-06-26T22:35:43.893-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "oFR70cayDQCbsQUABvFsIA=="
 				},
-				"code" : "urlBase := 'https://www-d.fgv.br/EBAPE/GestaoAcad/api/v1/'.\r\"urlBase := 'http://localhost:1654/ebape/gestaoacad/'.\"\r\"urlBase := 'http://localhost:8282/'.\""
+				"code" : "\"urlBase := 'https://www-d.fgv.br/EBAPE/GestaoAcad/api/v1/'.\"\r\"urlBase := 'http://localhost:1654/ebape/gestaoacad/'.\"\rurlBase := 'http://localhost:8282/'."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -239,14 +239,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-06T08:26:49.206-03:00"
+						"dateAndTimeString" : "2023-06-26T22:37:56.11-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "KAf/1sayDQCb//AyBvFsIA=="
 				},
-				"code" : "endpointDisciplines := 'Disciplinas'.\rendpointPrograms := 'Programas'.\rendpointClasses := 'Classes'.\rendpointProfessors := 'Professores'.\rendPointAcoes := 'Acoes'.\rendPointPerfis := 'Perfis'.\r\rendPoint := endPointPerfis."
+				"code" : "endpointDisciplines := 'Disciplinas'.\rendpointPrograms := 'Programas'.\rendpointClasses := 'Classes'.\rendpointProfessors := 'Professores'.\rendPointActions := 'Acoes'.\rendPointRoles := 'Perfis'.\r\rendPoint := endpointDisciplines."
 			},
 			{
 				"__type" : "pharoSnippet",

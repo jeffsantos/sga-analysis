@@ -5,9 +5,9 @@ Class {
 }
 
 { #category : #action }
-DisciplineRESTRepository >> add: dict [
+DisciplineRESTRepository >> addDiscipline: aDiscipline [
 	| array |
-	array := super add: dict.
+	array := super add: aDiscipline rawData.
 	
 	^ array
 		collect: [ :each | Discipline newFromData: each ]
