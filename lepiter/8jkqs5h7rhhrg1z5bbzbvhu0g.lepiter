@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-07T16:31:08.321-03:00"
+						"dateAndTimeString" : "2023-07-04T12:48:24.033034-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "UCQNO8e5DQCIi4twC5VQkA=="
 				},
-				"code" : "sga := {'modelName' -> 'sga' .\r\t\t'baseNamespace' -> 'EBAPE' .\r\t\t'prefix' -> 'FGV (Namespace)::' } asDictionary.\r\rplan := {'modelName' -> 'planejamento' .\r\t\t'baseNamespace' -> 'planejamento'.\r\t\t'prefix' -> '' } asDictionary.\r\rproject := plan."
+				"code" : "sga := {'modelName' -> 'sga' .\r\t\t'baseNamespace' -> 'EBAPE' .\r\t\t'prefix' -> 'FGV (Namespace)::' } asDictionary.\r\rplan := {'modelName' -> 'planejamento' .\r\t\t'baseNamespace' -> 'planejamento'.\r\t\t'prefix' -> '' } asDictionary.\r\rproject := sga."
 			},
 			{
 				"__type" : "pharoSnippet",

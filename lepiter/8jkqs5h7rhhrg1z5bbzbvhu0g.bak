@@ -168,7 +168,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-07T16:33:24.574-03:00"
+						"dateAndTimeString" : "2023-06-07T16:33:33.165-03:00"
 					}
 				},
 				"uid" : {
@@ -178,7 +178,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "## Only packages with the system baseName"
+				"string" : "## Only namespaces with the system baseName"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -213,6 +213,43 @@
 					"uidString" : "0JW6PMe5DQCInaYyC5VQkA=="
 				},
 				"code" : "selectedNamespaces := selectedNamespaces select: [ :ns | (ns asString findString: (project at: 'baseNamespace')) > 0 ]."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-07T16:33:36.822-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-07T16:33:58.499-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "CEv38vC5DQC5+uj1CBmIuw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Remove the top most namespace (the name of the project)"
 			},
 			{
 				"__type" : "pharoSnippet",
