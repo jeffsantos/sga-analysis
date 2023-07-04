@@ -12,7 +12,7 @@ SGAObject class >> newFromData: rawData [
 	self subclassResponsibility
 ]
 
-{ #category : #accessing }
+{ #category : #'gt extensions' }
 SGAObject >> gtPropertiesFor: aView [
 	<gtView>
 	^ aView forward
