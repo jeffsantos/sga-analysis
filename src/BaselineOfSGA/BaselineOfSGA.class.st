@@ -4,18 +4,8 @@ Class {
 	#category : #BaselineOfSGA
 }
 
-{ #category : #lepiter }
-BaselineOfSGA class >> loadLepiter [
-	| currentProperties |
-	currentProperties := LeDatabasesRegistry defaultLogicalDatabase properties.
-	currentProperties
-		addRegisteredDirectory: FileLocator imageDirectory / 'pharo-local' / 'iceberg' / 'jeffsantos'
-				/ 'sga-analysis' / 'lepiter'.
-	LeDatabasesRegistry default defaultLogicalDatabase reload
-]
-
 { #category : #accessing }
-BaselineOfSGA class >> loadLepiter2 [
+BaselineOfSGA class >> loadLepiter [
 	| repositoryName |
 	repositoryName := 'sga-analysis'.
 
@@ -27,10 +17,7 @@ BaselineOfSGA class >> loadLepiter2 [
 			currentProperties := defaultDatabase properties.
 			currentProperties
 				addRegisteredDirectory: aRepository repositoryDirectory / 'lepiter'.
-				defaultDatabase reload.
-			(defaultDatabase databases
-				detect: [ :aDatabase | aDatabase databaseName includesSubstring: repositoryName ])
-				databaseName: 'SGA Moldable Analysis']
+				defaultDatabase reload]
 		ifNone: [ self inform: 'Repository not found.' ]
 ]
 
