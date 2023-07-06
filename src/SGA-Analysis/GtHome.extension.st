@@ -6,7 +6,7 @@ GtHome >> sgaAnalysisSection [
 	^ GtHomeStartPageSection new 
 		title: 'SGA Moldable Analysis';
 		description: 'SGA''s Lepiter Database';
-		databaseName: 'jeffsantos\sga-analysis\lepiter';
+		databaseName: 'SGA Moldable Analysis';
 		startPageName: 'SGA Analysis';
 		priority: 9
 ]

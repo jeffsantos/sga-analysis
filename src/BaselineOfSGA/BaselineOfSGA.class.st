@@ -4,7 +4,7 @@ Class {
 	#category : #BaselineOfSGA
 }
 
-{ #category : #accessing }
+{ #category : #loading }
 BaselineOfSGA class >> loadLepiter [
 	| repositoryName |
 	repositoryName := 'sga-analysis'.
@@ -19,6 +19,13 @@ BaselineOfSGA class >> loadLepiter [
 				addRegisteredDirectory: aRepository repositoryDirectory / 'lepiter'.
 				defaultDatabase reload]
 		ifNone: [ self inform: 'Repository not found.' ]
+]
+
+{ #category : #loading }
+BaselineOfSGA class >> renameLepiter [
+	LeDatabasesRegistry defaultLogicalDatabase databases 
+		detect: [ :aDatabase | aDatabase databaseName includesSubstring: 'sga-analysis' ] 
+		ifFound: [ :aDatabase | aDatabase databaseName: 'SGA Moldable Analysis']
 ]
 
 { #category : #baselines }
