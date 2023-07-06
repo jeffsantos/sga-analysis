@@ -648,14 +648,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-06T09:13:00.245-03:00"
+						"dateAndTimeString" : "2023-07-06T09:12:31.853-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "WI5TKTK8DQCDJ3BTCLIZAg=="
 				},
-				"code" : "(LeDatabasesRegistry defaultLogicalDatabase databases detect: [ :aDatabase | aDatabase databaseName includesSubstring: 'lepiter' ]) databaseName"
+				"code" : "LeDatabasesRegistry defaultLogicalDatabase databases detect: [ :aDatabase | aDatabase databaseName includesSubstring: 'lep' ]"
 			}
 		]
 	},

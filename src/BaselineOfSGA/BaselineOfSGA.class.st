@@ -14,6 +14,26 @@ BaselineOfSGA class >> loadLepiter [
 	LeDatabasesRegistry default defaultLogicalDatabase reload
 ]
 
+{ #category : #accessing }
+BaselineOfSGA class >> loadLepiter2 [
+	| repositoryName |
+	repositoryName := 'sga-analysis'.
+
+	IceRepository registry
+		detect: [ :aRepository | aRepository name = repositoryName ]
+		ifFound: [ :aRepository | 
+			| defaultDatabase currentProperties |
+			defaultDatabase := LeDatabasesRegistry defaultLogicalDatabase.
+			currentProperties := defaultDatabase properties.
+			currentProperties
+				addRegisteredDirectory: aRepository repositoryDirectory / 'lepiter'.
+				defaultDatabase reload.
+			(defaultDatabase databases
+				detect: [ :aDatabase | aDatabase databaseName includesSubstring: repositoryName ])
+				databaseName: 'SGA Moldable Analysis']
+		ifNone: [ self inform: 'Repository not found.' ]
+]
+
 { #category : #baselines }
 BaselineOfSGA >> baseline: spec [
 	<baseline>
