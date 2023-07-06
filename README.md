@@ -17,5 +17,5 @@ For analysis (without the webapp):
 Metacello new 
 	repository: 'github://jeffsantos/sga-analysis:main/src';
 	baseline: 'SGA';
-	load: #('NonWeb', 'Analysis')
+	load: #('NonWeb' 'Analysis')
 ```
