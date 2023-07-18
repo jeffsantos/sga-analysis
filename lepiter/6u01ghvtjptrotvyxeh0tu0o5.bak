@@ -501,74 +501,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-04T23:48:03.371-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-06T08:00:44.295-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "KGBeKha8DQCSlBDcB9w0Wg=="
-				},
-				"code" : "sgaLepiterDB := LeDatabasesRegistry defaultLogicalDatabase databases at: 3"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-06T08:00:53.644-03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-06T08:03:02.812-03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "4Fa8KjG8DQCTKTCkCLIZAg=="
-				},
-				"code" : "sgaLepiterDB databaseName: 'SGA Analysis DB'"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2023-07-06T08:06:23.013-03:00"
 					}
 				},
@@ -648,14 +580,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-06T09:12:31.853-03:00"
+						"dateAndTimeString" : "2023-07-06T09:13:00.245-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "WI5TKTK8DQCDJ3BTCLIZAg=="
 				},
-				"code" : "LeDatabasesRegistry defaultLogicalDatabase databases detect: [ :aDatabase | aDatabase databaseName includesSubstring: 'lep' ]"
+				"code" : "(LeDatabasesRegistry defaultLogicalDatabase databases detect: [ :aDatabase | aDatabase databaseName includesSubstring: 'lepiter' ]) databaseName"
 			}
 		]
 	},
