@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-08-16T10:39:27.70116-03:00"
+						"dateAndTimeString" : "2023-06-26T22:35:43.893-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "oFR70cayDQCbsQUABvFsIA=="
 				},
-				"code" : "urlBase := 'https://www-d.fgv.br/EBAPE/GestaoAcad/api/v1/'.\r\"urlBase := 'http://localhost:1654/ebape/gestaoacad/'.\"\r\"urlBase := 'http://localhost:8282/'.\""
+				"code" : "\"urlBase := 'https://www-d.fgv.br/EBAPE/GestaoAcad/api/v1/'.\"\r\"urlBase := 'http://localhost:1654/ebape/gestaoacad/'.\"\rurlBase := 'http://localhost:8282/'."
 			},
 			{
 				"__type" : "pharoSnippet",
