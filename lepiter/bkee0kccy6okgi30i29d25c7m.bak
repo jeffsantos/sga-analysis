@@ -97,14 +97,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-09-02T23:56:08.220641-03:00"
+						"dateAndTimeString" : "2023-09-02T23:56:06.884113-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "7Ciw3HG0DQC/aZ4WCfBfww=="
 				},
-				"code" : "content := settingsFile contents.\r\r\nsgaSettings := NeoJSONReader fromString: content.\r\rsgaSettings at: 'current' put: 'desenv';\r\t\t\tyourself."
+				"code" : "content := settingsFile contents\r\r\nsgaSettings := NeoJSONReader fromString: content.\r\rsgaSettings at: 'current' put: 'desenv';\r\t\t\tyourself."
 			},
 			{
 				"__type" : "pharoSnippet",
