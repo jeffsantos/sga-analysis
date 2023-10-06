@@ -14,79 +14,84 @@ MockAPIServer class >> rebuildRoutes [
 
 { #category : #defaults }
 MockAPIServer >> createTeapotDefaultRoutes [
-	| mockData data allIds id |
-	mockData := MockAPI createWithMockData.
-
-	data := Dictionary new.
+	| mockData returnDict allIds id |
 
 	teapot stop.
 	teapot removeAllDynamicRoutes.
 
+	mockData := MockAPI createWithMockData.
+	
+	returnDict := { 'statusCode' -> 200 . 
+			  'message' -> 'OK' .
+			  'error' -> false .
+			  'uiMessage' -> 'Sucesso' } asDictionary.	
+	
 	teapot
-		GET: '/Programas'
-				-> [ data
-						at: 'data' put: mockData programs;
-						yourself ];
-		GET: '/Programas/<id:IsInteger>'
+		GET: '/api/Programas'
+				-> [ returnDict at: 'data' put: mockData programs;
+					   yourself ];
+		GET: '/api/Programas/<id:IsInteger>'
 				-> [ :request | 
-					data
-						at: 'data' put: (mockData programId: (request at: #id));
+						returnDict at: 'data' put: (mockData programId: (request at: #id));
 						yourself ];
-		GET: '/Professores'
-				-> [ data
-						at: 'data' put: mockData professors;
-						yourself ];
-		GET: '/Professores/<id:IsInteger>'
+		GET: '/api/Professores'
+				-> [ returnDict at: 'data' put: mockData professors;
+					   yourself ];
+		GET: '/api/Professores/<id:IsInteger>'
 				-> [ :request | 
-					data
-						at: 'data' put: (mockData professorId: (request at: #id));
+						returnDict at: 'data' put: (mockData professorId: (request at: #id));
 						yourself ];
-		GET: '/Disciplinas'
-				-> [ data
-						at: 'data' put: mockData disciplines;
-						yourself ];
-		GET: '/Disciplinas/<id:IsInteger>'
+		GET: '/api/Disciplinas'
+				-> [ returnDict at: 'data' put: mockData disciplines;
+					   yourself ];
+		GET: '/api/Disciplinas/<id:IsInteger>'
 				-> [ :request | 
-					data
-						at: 'data' put: (mockData disciplineId: (request at: #id));
+						returnDict at: 'data' put: (mockData disciplineId: (request at: #id));
 						yourself ];
-		POST: '/Disciplinas'
+		POST: '/api/Disciplinas'
 				-> [ :request | 
-					| disc allDisciplines |
-					disc := {'codigo' -> (request at: #codigo).						
-							'nome' -> (request at: #nome).
-							'cargaHoraria' -> (request at: #cargaHoraria) asInteger} asDictionary.
-
-					allDisciplines := mockData disciplines asOrderedCollection.
-					
-					allIds := allDisciplines collect: [ :each | each at: 'id'].
-					
-					id := allIds max + 1.
-					
-					disc at: 'id' put: id.
-					
-					allDisciplines add: disc.
-					mockData disciplines: allDisciplines.
-					data
-						at: 'data' put: mockData disciplines;
+						| disc allDisciplines |
+						disc := {'codigo' -> (request at: #codigo).						
+								'nome' -> (request at: #nome).
+								'cargaHoraria' -> (request at: #cargaHoraria) asInteger} asDictionary.
+	
+						allDisciplines := mockData disciplines asOrderedCollection.
+						
+						allIds := allDisciplines collect: [ :each | each at: 'id'].
+						
+						id := allIds max + 1.
+						
+						disc at: 'id' put: id.
+						
+						allDisciplines add: disc.
+						mockData disciplines: allDisciplines.
+						returnDict at: 'data' put: mockData disciplines;
 						yourself ];
-		GET: '/Classes'
-				-> [ data
-						at: 'data' put: mockData classOffers;
-						yourself ];
-		GET: '/Classes/<id>'
+		GET: '/api/Classes'
+				-> [ returnDict at: 'data' put: mockData classOffers;
+					   yourself ];
+		GET: '/api/Classes/<id>'
 				-> [ :request | 
-					data
-						at: 'data' put: (mockData classOfferId: (request at: #id));
+						returnDict at: 'data' put: (mockData classOfferId: (request at: #id));
 						yourself ];
-		POST: '/Auth'
+		POST: '/api/Auth'
 				-> [ :request | 
 					| login |
 					login := {'login' -> (request at: #login).
 							'senha' -> (request at: #senha)} asDictionary.
-					data := {'data'
-								-> {'token' -> '4302917e-c0bd-4f02-a15b-b7cf42ad6f5c'} asDictionary}
-							asDictionary ]
+
+					returnDict at: 'data' put: {'token' -> '4302917e-c0bd-4f02-a15b-b7cf42ad6f5c'} asDictionary;
+					yourself ];
+		POST: '/api/Auth/Token'
+				-> [ :request |
+						| returnDataFile content jsonData |
+						returnDataFile := 'auth-token.json' asFileReference.
+						
+						content := returnDataFile contents.
+						jsonData := NeoJSONReader fromString: content. 
+						
+						(jsonData at: 'data') at: 'validoAte' put: '04/10/2024 11:33:48'.
+						jsonData ]
 ]
 
 { #category : #initialization }

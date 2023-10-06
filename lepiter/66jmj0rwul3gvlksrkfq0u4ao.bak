@@ -622,14 +622,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-10-03T12:24:15.809-03:00"
+						"dateAndTimeString" : "2023-10-03T12:15:29.913-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "mXOBcWS6DQCDxGogCXpscw=="
 				},
-				"code" : "classOfferRepo classOfferId: '35503045-2016-403e-8fab-36453f755d92'"
+				"code" : "classOfferRepo classOfferId: 'a085e39c-4682-4f4f-a0e5-22d9e6ac5e1d'"
 			}
 		]
 	},

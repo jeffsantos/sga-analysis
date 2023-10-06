@@ -362,7 +362,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-10-03T16:43:43.835-03:00"
+						"dateAndTimeString" : "2023-10-03T16:43:37.113-03:00"
 					}
 				},
 				"uid" : {
@@ -372,7 +372,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtTodo:label=Renomear classe Discipline para Subject (e todas as referências}}"
+				"string" : "{{gtTodo:label=Renomear classe Discipline para Subject (e }}"
 			}
 		]
 	},

@@ -63,14 +63,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-29T17:50:21.074433-03:00"
+						"dateAndTimeString" : "2023-10-04T15:20:36.561-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "O3jC23G0DQC/YAK0CfBfww=="
 				},
-				"code" : "desenvDict := {#url -> 'https://www-d.fgv.br/EBAPE/GestaoAcad'.\r\t\t\t   #prefix -> 'api'.\r\t\t\t   #version -> 'v1'} asDictionary.\r\t\t\t   \rmockDict := {#url -> 'http://localhost:8282'.\r\t\t\t #prefix -> ''.\r\t\t     #version -> ''} asDictionary.\r\t\t     \rsgaSettings := {#current -> 'mock'.\r\t\t\t\t#mock -> mockDict.\r\t\t\t\t#desenv -> desenvDict} asDictionary."
+				"code" : "desenvDict := {#url -> 'https://www-d.fgv.br/EBAPE/GestaoAcad'.\r\t\t\t   #prefix -> 'api'.\r\t\t\t   #version -> 'v1'} asDictionary.\r\t\t\t   \rmockDict := {#url -> 'http://localhost:8282'.\r\t\t\t #prefix -> 'api'.\r\t\t     #version -> ''} asDictionary.\r\t\t     \rsgaSettings := {#current -> 'mock'.\r\t\t\t\t#mock -> mockDict.\r\t\t\t\t#desenv -> desenvDict} asDictionary."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -97,14 +97,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-09-02T23:56:06.884113-03:00"
+						"dateAndTimeString" : "2023-10-05T16:05:58.34-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "7Ciw3HG0DQC/aZ4WCfBfww=="
 				},
-				"code" : "content := settingsFile contents\r\r\nsgaSettings := NeoJSONReader fromString: content.\r\rsgaSettings at: 'current' put: 'desenv';\r\t\t\tyourself."
+				"code" : "content := settingsFile contents.\r\r\nsgaSettings := NeoJSONReader fromString: content.\r\rsgaSettings at: 'current' put: 'desenv';\r\t\t\tyourself."
 			},
 			{
 				"__type" : "pharoSnippet",
