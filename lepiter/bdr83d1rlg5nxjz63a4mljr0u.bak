@@ -171,14 +171,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-04-22T23:23:13.495803-03:00"
+						"dateAndTimeString" : "2023-10-09T16:16:11.027-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "QLLxSlm2DQCVkp41Cz076Q=="
 				},
-				"code" : "urlBase := 'http://localhost:8282/'.\rserviceEndPoint := 'Disciplinas'."
+				"code" : "urlBase := 'http://localhost:8282/'.\"\rurlBase := 'https://1ede3a2d-5b74-462b-bc4d-24d4ed63cb68.mock.pstmn.io/EBAPE/GestaoAcad/api/v1/'.\rserviceEndPoint := 'Disciplinas'."
 			},
 			{
 				"__type" : "textSnippet",
@@ -418,7 +418,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-10-04T15:54:32.344-03:00"
+						"dateAndTimeString" : "2023-10-04T15:54:37.544-03:00"
 					}
 				},
 				"uid" : {
@@ -428,7 +428,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "## Test JSON parsin"
+				"string" : "## Test JSON parsing of non-string data"
 			},
 			{
 				"__type" : "pharoSnippet",
