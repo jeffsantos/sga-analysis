@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-10-09T16:10:19.076-03:00"
+						"dateAndTimeString" : "2024-01-09T15:44:46.195-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "oFR70cayDQCbsQUABvFsIA=="
 				},
-				"code" : "\"urlBase := 'https://www-d.fgv.br/EBAPE/GestaoAcad/api/v1/'.\"\r\"urlBase := 'http://localhost:1654/ebape/gestaoacad/'.\"\r\"urlBase := 'http://localhost:8282/api/'.\"\rurlBase := 'https://1ede3a2d-5b74-462b-bc4d-24d4ed63cb68.mock.pstmn.io/EBAPE/GestaoAcad/api/v1/'."
+				"code" : "urlBase := 'https://www-d.fgv.br/EBAPE/GestaoAcad/api/v1/'.\r\"urlBase := 'http://localhost:1654/ebape/gestaoacad/'.\"\r\"urlBase := 'http://localhost:8282/api/'.\"\r\"urlBase := 'https://1ede3a2d-5b74-462b-bc4d-24d4ed63cb68.mock.pstmn.io/EBAPE/GestaoAcad/api/v1/'.\""
 			},
 			{
 				"__type" : "textSnippet",
@@ -171,14 +171,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-03T15:29:51.943-03:00"
+						"dateAndTimeString" : "2024-01-09T09:00:08.497-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "0CGL08ayDQCbwboPBvFsIA=="
 				},
-				"code" : "json := ZnClient new\r\n\t\t\turl: urlBase,endPoint;\r\n\t\t\tformAt: 'login' put: 'sga.planejamento';\r\t\t\tformAt: 'senha' put: '123';\r\n\t\t\tpost."
+				"code" : "json := ZnClient new\r\n\t\t\turl: urlBase,endPoint;\r\t\t\theaderAt: 'x-api-key' put: 'PMAK-659d31f6594baf00380211c3-3fbd4a390fafab1ac04e2e769dd8bef362';\r\n\t\t\tformAt: 'login' put: 'sga.planejamento';\r\t\t\tformAt: 'senha' put: '123';\r\n\t\t\tpost."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -344,14 +344,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-10-03T21:07:50.418-03:00"
+						"dateAndTimeString" : "2024-01-09T09:01:28.779-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "gMFpYjrDDQCKcHGiBVSYxg=="
 				},
-				"code" : "json := ZnClient new\r\n\t\t\turl: urlBase,endPoint;\r\n\t\t\tformAt: 'token' put: token;\r\t\t\tpost."
+				"code" : "json := ZnClient new\r\n\t\t\turl: urlBase,endPoint;\r\t\t\theaderAt: 'x-api-key' put: 'PMAK-659d31f6594baf00380211c3-3fbd4a390fafab1ac04e2e769dd8bef362';\r\n\t\t\tformAt: 'token' put: token;\r\t\t\tpost."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -625,14 +625,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-10-03T21:11:27.463-03:00"
+						"dateAndTimeString" : "2024-01-09T09:01:59.038-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "sA0Q2MayDQCcBr/VBvFsIA=="
 				},
-				"code" : "client := ZnClient new. \r\rjson := client \r\tenforceHttpSuccess: true;\r\turl: urlBase, endPoint;\r\theaderAt: 'Authorization' put: 'Bearer ',token;\r\tget."
+				"code" : "client := ZnClient new. \r\rjson := client \r\tenforceHttpSuccess: true;\r\turl: urlBase, endPoint;\r\theaderAt: 'x-api-key' put: 'PMAK-659d31f6594baf00380211c3-3fbd4a390fafab1ac04e2e769dd8bef362';\r\theaderAt: 'Authorization' put: 'Bearer ',token;\r\tget."
 			},
 			{
 				"__type" : "pharoSnippet",
