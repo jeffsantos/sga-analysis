@@ -63,14 +63,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-10-04T15:20:36.561-03:00"
+						"dateAndTimeString" : "2024-01-15T19:17:07.257-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "O3jC23G0DQC/YAK0CfBfww=="
 				},
-				"code" : "desenvDict := {#url -> 'https://www-d.fgv.br/EBAPE/GestaoAcad'.\r\t\t\t   #prefix -> 'api'.\r\t\t\t   #version -> 'v1'} asDictionary.\r\t\t\t   \rmockDict := {#url -> 'http://localhost:8282'.\r\t\t\t #prefix -> 'api'.\r\t\t     #version -> ''} asDictionary.\r\t\t     \rsgaSettings := {#current -> 'mock'.\r\t\t\t\t#mock -> mockDict.\r\t\t\t\t#desenv -> desenvDict} asDictionary."
+				"code" : "desenvDict := {#url -> 'https://www-d.fgv.br/EBAPE/GestaoAcad'.\r\t\t\t   #prefix -> 'api'.\r\t\t\t   #version -> 'v1'} asDictionary.\r\t\t\t   \rmockDict := {#url -> 'http://localhost:8282'.\r\t\t\t #prefix -> 'api'.\r\t\t     #version -> ''} asDictionary.\r\t\t     \rmockPostmanDict := {#url -> 'https://...mock.pstmn.io/EBAPE/GestaoAcad'.\r\t\t\t \t   #prefix -> 'api'.\r\t\t     \t   #version -> 'v1'.\r\t\t     \t   #apiKey -> ''} asDictionary.\r\t\t     \t   \rlocalDict := {#url -> 'http://localhost:1654/ebape/gestaoacad/'.\r\t\t\t #prefix -> ''.\r\t\t     #version -> ''} asDictionary.\r\t\t     \raccessDict := {#loginBase -> ''.\r\t\t\t   #senhaBase -> '' } asDictionary.\r\t\t     \rsgaSettings := {#current -> 'mockPostman'.\r\t\t\t\t#mock -> mockDict.\r\t\t\t\t#mockPostman -> mockPostmanDict.\r\t\t\t\t#desenv -> desenvDict.\r\t\t\t\t#local -> localDict.\r\t\t\t\t#access -> accessDict} asDictionary."
 			},
 			{
 				"__type" : "pharoSnippet",

@@ -63,14 +63,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-10-04T15:20:36.561-03:00"
+						"dateAndTimeString" : "2024-01-15T18:47:34.906-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "O3jC23G0DQC/YAK0CfBfww=="
 				},
-				"code" : "desenvDict := {#url -> 'https://www-d.fgv.br/EBAPE/GestaoAcad'.\r\t\t\t   #prefix -> 'api'.\r\t\t\t   #version -> 'v1'} asDictionary.\r\t\t\t   \rmockDict := {#url -> 'http://localhost:8282'.\r\t\t\t #prefix -> 'api'.\r\t\t     #version -> ''} asDictionary.\r\t\t     \rsgaSettings := {#current -> 'mock'.\r\t\t\t\t#mock -> mockDict.\r\t\t\t\t#desenv -> desenvDict} asDictionary."
+				"code" : "desenvDict := {#url -> 'https://www-d.fgv.br/EBAPE/GestaoAcad'.\r\t\t\t   #prefix -> 'api'.\r\t\t\t   #version -> 'v1'} asDictionary.\r\t\t\t   \rmockDict := {#url -> 'http://localhost:8282'.\r\t\t\t #prefix -> 'api'.\r\t\t     #version -> ''} asDictionary.\r\t\t     \rmockPostmanDict := {#url -> 'https://1ede3a2d-5b74-462b-bc4d-24d4ed63cb68.mock.pstmn.io/EBAPE/GestaoAcad'.\r\t\t\t \t   #prefix -> 'api'.\r\t\t     \t   #version -> 'v1'.\r\t\t     \t   #apiKey -> 'PMAK-659d31f6594baf00380211c3-5d07a896a4c16b9ebb24590da14d4b0236'} asDictionary.\r\t\t     \t   \rlocalDict := {#url -> 'http://localhost:1654/ebape/gestaoacad/'.\r\t\t\t #prefix -> ''.\r\t\t     #version -> ''} asDictionary.\r\t\t     \raccessDict := {#loginBase -> 'sga.planejamento'.\r\t\t\t   #senhaBase -> '123' } asDictionary.\r\t\t     \rsgaSettings := {#current -> 'mockPostman'.\r\t\t\t\t#mock -> mockDict.\r\t\t\t\t#mockPostman -> mockPostmanDict.\r\t\t\t\t#desenv -> desenvDict.\r\t\t\t\t#local -> localDict.\r\t\t\t\t#access -> accessDict} asDictionary."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -97,14 +97,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-10-05T16:11:47.074-03:00"
+						"dateAndTimeString" : "2024-01-11T08:17:29.341-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "7Ciw3HG0DQC/aZ4WCfBfww=="
 				},
-				"code" : "content := settingsFile contents.\r\r\nsgaSettings := NeoJSONReader fromString: content.\r\rsgaSettings at: 'current' put: 'mock';\r\t\t\tyourself."
+				"code" : "content := settingsFile contents.\r\r\nsgaSettings := NeoJSONReader fromString: content.\r\rsgaSettings at: 'current' put: 'desenv';\r\t\t\tyourself."
 			},
 			{
 				"__type" : "pharoSnippet",

@@ -66,14 +66,116 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-11T08:02:27.91-03:00"
+						"dateAndTimeString" : "2024-01-15T18:05:48.816-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "oFR70cayDQCbsQUABvFsIA=="
 				},
-				"code" : "urlBase := 'https://www-d.fgv.br/EBAPE/GestaoAcad/api/v1/'.\r\"urlBase := 'http://localhost:1654/ebape/gestaoacad/'.\"\r\"urlBase := 'http://localhost:8282/api/'.\"\r\"urlBase := 'https://1ede3a2d-5b74-462b-bc4d-24d4ed63cb68.mock.pstmn.io/EBAPE/GestaoAcad/api/v1/'.\"\rpostmanMockAPI := false."
+				"code" : "settingsFile := 'sga-settings.json' asFileReference."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-15T18:05:54.701-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-15T18:06:32.745-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "4N7RHWTLDQCXFqRpCPVJ1w=="
+				},
+				"code" : "content := settingsFile contents.\rsgaSettings := NeoJSONReader fromString: content."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-15T18:07:20.41-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-15T18:45:49.942-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "qK/tImTLDQCXqnDrCPVJ1w=="
+				},
+				"code" : "serverParams := sgaSettings at: 'mockPostman'.\rurl := serverParams at: 'url'.\rprefix := serverParams at: 'prefix'.\rversion := serverParams at: 'version'.\rapiKey := serverParams at: 'apiKey' ifAbsent: [apiKey := ''].\r\t\r(prefix ~= '') ifTrue: [ url := url,'/',prefix ].\r(version ~= '') ifTrue: [ url := url,'/',version ].\r\rurlBase := url,'/'."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-15T18:19:00.856-03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-15T18:23:09.521-03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2KStTGTLDQCbj0RNCPVJ1w=="
+				},
+				"code" : "accessParams := sgaSettings at: 'access'.\rloginBase := accessParams at: 'loginBase'.\rpwdBase := accessParams at: 'senhaBase'"
 			},
 			{
 				"__type" : "textSnippet",
@@ -208,14 +310,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-11T08:03:46.789-03:00"
+						"dateAndTimeString" : "2024-01-15T18:43:45.589-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "0CGL08ayDQCbwboPBvFsIA=="
 				},
-				"code" : "client := ZnClient new\r\n\t\t\turl: urlBase,endPoint;\r\t\t\tformAt: 'login' put: 'sga.planejamento';\r\t\t\tformAt: 'senha' put: '123'."
+				"code" : "client := ZnClient new\r\t\t\tlogToTranscript;\r\n\t\t\turl: urlBase,endPoint;\r\t\t\tformAt: 'login' put: loginBase;\r\t\t\tformAt: 'senha' put: pwdBase."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -242,14 +344,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-11T08:03:28.275-03:00"
+						"dateAndTimeString" : "2024-01-15T18:32:11.397-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "iAnHMQvLDQCbTwelDOH+TQ=="
 				},
-				"code" : "postmanMockAPI ifTrue: [client headerAt: 'x-api-key' put: 'PMAK-659d31f6594baf00380211c3-3fbd4a390fafab1ac04e2e769dd8bef362']."
+				"code" : "apiKey ifNotEmpty: [client headerAt: 'x-api-key' put: apiKey]."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -449,14 +551,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-11T08:07:34.021-03:00"
+						"dateAndTimeString" : "2024-01-15T18:43:23.779-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "gMFpYjrDDQCKcHGiBVSYxg=="
 				},
-				"code" : "client := ZnClient new\r\n\t\t\turl: urlBase,endPoint;\r\t\t\tformAt: 'token' put: token."
+				"code" : "client := ZnClient new\r\t\t\tlogToTranscript;\r\n\t\t\turl: urlBase,endPoint;\r\t\t\tformAt: 'token' put: token."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -483,14 +585,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-11T08:07:41.394-03:00"
+						"dateAndTimeString" : "2024-01-15T18:51:06.679-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "aNfSSgvLDQCfxOMyDOH+TQ=="
 				},
-				"code" : "postmanMockAPI ifTrue: [client headerAt: 'x-api-key' put: 'PMAK-659d31f6594baf00380211c3-3fbd4a390fafab1ac04e2e769dd8bef362']."
+				"code" : "apiKey ifNotEmpty: [client headerAt: 'x-api-key' put: apiKey]."
 			},
 			{
 				"__type" : "pharoSnippet",
