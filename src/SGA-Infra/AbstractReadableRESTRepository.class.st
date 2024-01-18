@@ -57,11 +57,19 @@ AbstractReadableRESTRepository >> authRawData: dictionary [
 
 { #category : #authentication }
 AbstractReadableRESTRepository >> authenticate [
-	| json dictionary |
+	| json dictionary stream env accessParams loginBase pwdBase |
+	
+	stream := 'sga-settings.json' asFileReference readStream.
+	env := STON fromStream: stream.
+	
+	accessParams := env at: 'access'.
+	loginBase := accessParams at: 'loginBase'.
+	pwdBase := accessParams at: 'senhaBase'.
+	
 	json := ZnClient new
 			url: self urlBase, self authEndPoint;
-			formAt: 'login' put: 'sga.planejamento';
-			formAt: 'senha' put: '123';
+			formAt: 'login' put: loginBase;
+			formAt: 'senha' put: pwdBase;
 			post.
 			
 	dictionary := STON fromString: json.
