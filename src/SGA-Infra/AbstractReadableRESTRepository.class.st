@@ -69,7 +69,7 @@ AbstractReadableRESTRepository >> authenticate [
 	self authRawData: dictionary.
 ]
 
-{ #category : #services }
+{ #category : #querying }
 AbstractReadableRESTRepository >> getAll [
 	| json |
 	json := ZnClient new
@@ -80,7 +80,7 @@ AbstractReadableRESTRepository >> getAll [
 	^ (STON fromString: json) at: 'data'
 ]
 
-{ #category : #accessing }
+{ #category : #querying }
 AbstractReadableRESTRepository >> getById: id [
 	| json |
 	json := ZnClient new
@@ -94,7 +94,7 @@ AbstractReadableRESTRepository >> getById: id [
 	^ (STON fromString: json) at: 'data'
 ]
 
-{ #category : #abstract }
+{ #category : #initialization }
 AbstractReadableRESTRepository >> initializeEndPoint [
 	self subclassResponsibility
 ]

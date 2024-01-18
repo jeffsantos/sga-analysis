@@ -4,7 +4,7 @@ Class {
 	#category : #'SGA-Infra'
 }
 
-{ #category : #abstract }
+{ #category : #initialization }
 ProgramRESTRepository >> initializeEndPoint [
 	self serviceEndPoint: 'Programas'
 ]

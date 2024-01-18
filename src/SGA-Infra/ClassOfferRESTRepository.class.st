@@ -20,7 +20,7 @@ ClassOfferRESTRepository >> classOffers [
 		collect: [ :each | ClassOffer newFromData: each ]
 ]
 
-{ #category : #abstract }
+{ #category : #initialization }
 ClassOfferRESTRepository >> initializeEndPoint [
 	self serviceEndPoint: 'Classes'
 ]

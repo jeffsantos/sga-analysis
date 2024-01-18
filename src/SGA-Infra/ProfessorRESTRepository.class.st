@@ -4,7 +4,7 @@ Class {
 	#category : #'SGA-Infra'
 }
 
-{ #category : #accessing }
+{ #category : #initialization }
 ProfessorRESTRepository >> initializeEndPoint [
 	self serviceEndPoint: 'Professores'
 ]

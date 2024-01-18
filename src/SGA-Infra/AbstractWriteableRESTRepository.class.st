@@ -6,6 +6,11 @@ Class {
 
 { #category : #action }
 AbstractWriteableRESTRepository >> add: dict [
+
+	"An add method should return its argument to keep consistence
+	with the Smalltalk Collection api. Here, we return a list of the 
+	entity with the new object included. This is the standard on SGA."
+
 	| json |
 	json := ZnClient new
 			"enforceHttpSuccess: true;"

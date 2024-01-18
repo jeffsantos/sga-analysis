@@ -23,8 +23,8 @@ Class {
 	#instVars : [
 		'programs',
 		'professors',
-		'disciplines',
-		'classOffers'
+		'classOffers',
+		'subjects'
 	],
 	#category : #'SGA-Infra'
 }
@@ -32,7 +32,7 @@ Class {
 { #category : #'intance creation' }
 MockAPI class >> createWithMockData [
 
-	| dictProgram1 dictProgram2 dictProgram3 dictCohort1 dictCohort2 dictCohort3 dictProfessor1 dictProfessor2  dictDiscipline1 dictDiscipline2 dictDiscipline3 dictStandardSchedule1 dictStandardSchedule2 dictSyncScheduleWen1 dictSyncScheduleWen2 dictSyncScheduleWen3 dictSyncScheduleMon1 dictSyncScheduleMon2 dictCalendar1 dictAsyncSchedule1 dictSyncSchedule1 dictSyncSchedule2 dictAsyncSchedule2 dictSyncSchedule3 dictSyncSchedule4 dictCalendar2 dictClassOffer1 dictClassOffer2 programs professors disciplines classOffers |
+	| dictProgram1 dictProgram2 dictProgram3 dictCohort1 dictCohort2 dictCohort3 dictProfessor1 dictProfessor2  dictSubject1 dictSubject2 dictSubject3 dictStandardSchedule1 dictStandardSchedule2 dictSyncScheduleWen1 dictSyncScheduleWen2 dictSyncScheduleWen3 dictSyncScheduleMon1 dictSyncScheduleMon2 dictCalendar1 dictAsyncSchedule1 dictSyncSchedule1 dictSyncSchedule2 dictAsyncSchedule2 dictSyncSchedule3 dictSyncSchedule4 dictCalendar2 dictClassOffer1 dictClassOffer2 programs professors subjects classOffers |
 	dictProgram1 := {'id' -> 1.
 					'nome' -> 'Mestrado Profissional Executivo em Gestão Empresarial'.
 					'curso' -> 'MESTRADO'} asDictionary.
@@ -78,23 +78,23 @@ MockAPI class >> createWithMockData [
 					   
 	professors := { dictProfessor1. dictProfessor2 }.
 	
-	dictDiscipline1 := {'id' -> 1.
+	dictSubject1 := {'id' -> 1.
 					   'codigo' -> 'MAPTD01'.
 					   'nome' -> 'Transformação Digital'.
 					   'cargaHoraria' -> 30} asDictionary.
 					   
-	dictDiscipline2 := {'id' -> 2.
+	dictSubject2 := {'id' -> 2.
 					   'codigo' -> 'MAPTD02'.
 					   'nome' -> 'Metodologia de Pesquisa'.
 					   'cargaHoraria' -> 30} asDictionary.
 	
-	dictDiscipline3 := {'id' -> 3.
+	dictSubject3 := {'id' -> 3.
 					   'codigo' -> 'PROGAPLIC1'.
 					   'nome' -> 'Programação Aplicada 1'.
 					   'cargaHoraria' -> 30} asDictionary.
 					  
 					   
-	disciplines := { dictDiscipline1. dictDiscipline2. dictDiscipline3 }.
+	subjects := { dictSubject1. dictSubject2. dictSubject3 }.
 	
 	"Turma de Graduação
 	Horário padrão é opcional para a pós, obrigatório para a graduação"
@@ -177,7 +177,7 @@ MockAPI class >> createWithMockData [
 						 'semanaCiclo' -> 'SEGUNDA'.
 						 'horarios' -> { dictStandardSchedule1 . dictStandardSchedule1 }.
 						 'professor' -> dictProfessor1.
-						 'disciplina' -> dictDiscipline3  } asDictionary.
+						 'disciplina' -> dictSubject3  } asDictionary.
 						 
 						 
 	dictClassOffer2 := { 'sgaId' -> '35503045-2016-403e-8cde-36453f755d92'.
@@ -189,14 +189,14 @@ MockAPI class >> createWithMockData [
 						 'turma' -> dictCohort3.
 						 'semanaCiclo' -> 'SEXTA'.
 						 'professor' -> dictProfessor1.
-						 'disciplina' -> dictDiscipline1  } asDictionary.
+						 'disciplina' -> dictSubject1  } asDictionary.
 						 
 	classOffers := { dictClassOffer1 . dictClassOffer2 }.
 					 
 	^ self new
 			programs: programs;
 			professors: professors;
-			disciplines: disciplines;
+			subjects: subjects;
 			classOffers: classOffers.
 			
 	
@@ -215,21 +215,6 @@ MockAPI >> classOffers [
 { #category : #accessing }
 MockAPI >> classOffers: aClassOfferArray [
 	classOffers := aClassOfferArray
-]
-
-{ #category : #accessing }
-MockAPI >> disciplineId: anInteger [
-	^ disciplines detect: [ :disc | (disc at: 'id') = anInteger ].
-]
-
-{ #category : #accessing }
-MockAPI >> disciplines [
-	^ disciplines
-]
-
-{ #category : #accessing }
-MockAPI >> disciplines: aDisciplineArray [
-	disciplines := aDisciplineArray
 ]
 
 { #category : #accessing }
@@ -260,4 +245,19 @@ MockAPI >> programs [
 { #category : #accessing }
 MockAPI >> programs: aProgramArray [
 	programs := aProgramArray
+]
+
+{ #category : #accessing }
+MockAPI >> subjectId: anInteger [
+	^ subjects detect: [ :subj | (subj at: 'id') = anInteger ].
+]
+
+{ #category : #accessing }
+MockAPI >> subjects [
+	^ subjects
+]
+
+{ #category : #accessing }
+MockAPI >> subjects: aSubjectArray [
+	subjects := aSubjectArray
 ]

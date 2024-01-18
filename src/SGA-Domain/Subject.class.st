@@ -1,5 +1,5 @@
 Class {
-	#name : #Discipline,
+	#name : #Subject,
 	#superclass : #SGAObject,
 	#instVars : [
 		'id',
@@ -11,7 +11,7 @@ Class {
 }
 
 { #category : #'instance creation' }
-Discipline class >> newFromData: rawData [
+Subject class >> newFromData: rawData [
 	^ self new
 		id: (rawData at: 'id');
 		code: (rawData at: 'codigo');		
@@ -20,50 +20,45 @@ Discipline class >> newFromData: rawData [
 ]
 
 { #category : #accessing }
-Discipline >> code [
+Subject >> code [
 	^ code
 ]
 
 { #category : #accessing }
-Discipline >> code: aString [
+Subject >> code: aString [
 	code := aString.
 	rawData at: 'codigo' put: code
 ]
 
 { #category : #accessing }
-Discipline >> id [
+Subject >> id [
 	^ id
 ]
 
 { #category : #accessing }
-Discipline >> id: anInteger [
+Subject >> id: anInteger [
 	id := anInteger.
 	rawData at: 'id' put: (id asString)
 ]
 
-{ #category : #initialization }
-Discipline >> initialize [
-	rawData := Dictionary new.
-]
-
 { #category : #accessing }
-Discipline >> name [
+Subject >> name [
 	^ name
 ]
 
 { #category : #accessing }
-Discipline >> name: aString [
+Subject >> name: aString [
 	name := aString.
 	rawData at: 'nome' put: name
 ]
 
 { #category : #accessing }
-Discipline >> workload [
+Subject >> workload [
 	^ workload
 ]
 
 { #category : #accessing }
-Discipline >> workload: anInteger [
+Subject >> workload: anInteger [
 	workload := anInteger.
 	rawData at: 'cargaHoraria' put: (workload asString)
 ]

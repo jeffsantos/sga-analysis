@@ -42,11 +42,11 @@ MockAPIServer >> createTeapotDefaultRoutes [
 						returnDict at: 'data' put: (mockData professorId: (request at: #id));
 						yourself ];
 		GET: '/api/Disciplinas'
-				-> [ returnDict at: 'data' put: mockData disciplines;
+				-> [ returnDict at: 'data' put: mockData subjects;
 					   yourself ];
 		GET: '/api/Disciplinas/<id:IsInteger>'
 				-> [ :request | 
-						returnDict at: 'data' put: (mockData disciplineId: (request at: #id));
+						returnDict at: 'data' put: (mockData subjectId: (request at: #id));
 						yourself ];
 		POST: '/api/Disciplinas'
 				-> [ :request | 
@@ -55,7 +55,7 @@ MockAPIServer >> createTeapotDefaultRoutes [
 								'nome' -> (request at: #nome).
 								'cargaHoraria' -> (request at: #cargaHoraria) asInteger} asDictionary.
 	
-						allDisciplines := mockData disciplines asOrderedCollection.
+						allDisciplines := mockData subjects asOrderedCollection.
 						
 						allIds := allDisciplines collect: [ :each | each at: 'id'].
 						
@@ -64,8 +64,8 @@ MockAPIServer >> createTeapotDefaultRoutes [
 						disc at: 'id' put: id.
 						
 						allDisciplines add: disc.
-						mockData disciplines: allDisciplines.
-						returnDict at: 'data' put: mockData disciplines;
+						mockData subjects: allDisciplines.
+						returnDict at: 'data' put: mockData subjects;
 						yourself ];
 		GET: '/api/Classes'
 				-> [ returnDict at: 'data' put: mockData classOffers;
@@ -97,7 +97,7 @@ MockAPIServer >> createTeapotDefaultRoutes [
 { #category : #initialization }
 MockAPIServer >> initializeTeapotDefaultOptions [
 
-	teapot initializeOptions: { #defaultOutput -> #json. 
-								   #port -> 8282.
-								   } asDictionary.
+	teapot initializeOptions: {
+			(#defaultOutput -> #json).
+			(#port -> 8282) } asDictionary
 ]
