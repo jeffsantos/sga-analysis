@@ -22,6 +22,11 @@ RESTDomainObject >> gtPropertiesFor: aView [
 		view: #gtItemsFor:
 ]
 
+{ #category : #initialization }
+RESTDomainObject >> initialize [ 
+	rawData := Dictionary new
+]
+
 { #category : #accessing }
 RESTDomainObject >> rawData [
 	^ rawData

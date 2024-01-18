@@ -5,9 +5,9 @@ Class {
 }
 
 { #category : #action }
-SubjectRESTRepository >> addDiscipline: aDiscipline [
+SubjectRESTRepository >> addSubject: aSubject [
 	| array |
-	array := self add: aDiscipline rawData.
+	array := self add: aSubject rawData.
 	
 	^ array
 		collect: [ :each | Subject newFromData: each ]
