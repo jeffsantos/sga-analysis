@@ -242,14 +242,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-13T10:17:25.849358-03:00"
+						"dateAndTimeString" : "2024-01-18T17:31:36.849-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "eL3y3MayDQCcXMllBvFsIA=="
 				},
-				"code" : "discRepo := DisciplineRESTRepository createRESTRepository.\r\rdiscRepo token.\r\rdisciplines := discRepo disciplines."
+				"code" : "subjRepo := SubjectRESTRepository createRESTRepository.\r\rsubjRepo token.\r\rsubjects := subjRepo subjects."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -276,14 +276,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-13T10:17:44.739034-03:00"
+						"dateAndTimeString" : "2024-01-18T17:31:41.285-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "hSMiZGS6DQCtX2g9AGCg1w=="
 				},
-				"code" : "(disciplines at:1) workload."
+				"code" : "(subjects at:1) workload."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -310,14 +310,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-13T10:17:42.969011-03:00"
+						"dateAndTimeString" : "2024-01-18T17:31:52.228-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "HOeAZWS6DQCtgcZdAGCg1w=="
 				},
-				"code" : "discRepo disciplineId: 1."
+				"code" : "subjRepo subjectId: 1."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -344,14 +344,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-26T22:47:17.255-03:00"
+						"dateAndTimeString" : "2024-01-18T17:32:11.587-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "E8UhiXa2DQCiKFn1BNJQQg=="
 				},
-				"code" : "discObj := Discipline new\r\t\t\t\t\tcode: 'GRAD004';\r\t\t\t\t\tname: 'Teste via lepiter';\r\t\t\t\t\tworkload: 45\r\t\t\t\t\t"
+				"code" : "subjObj := Subject new\r\t\t\t\t\tcode: 'GRAD004';\r\t\t\t\t\tname: 'Teste via lepiter';\r\t\t\t\t\tworkload: 45\r\t\t\t\t\t"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -378,14 +378,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-04-24T11:39:42.7628-03:00"
+						"dateAndTimeString" : "2024-01-18T17:32:15.192-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "iq9otXe2DQClOSfkBNJQQg=="
 				},
-				"code" : "dict := discObj rawData"
+				"code" : "dict := subjObj rawData"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -412,14 +412,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-26T22:47:37.833-03:00"
+						"dateAndTimeString" : "2024-01-18T17:32:31.674-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "DwYanXa2DQCkjkwOBNJQQg=="
 				},
-				"code" : "discRepo addDiscipline:discObj"
+				"code" : "subjRepo addSubject:subjObj"
 			},
 			{
 				"__type" : "textSnippet",
